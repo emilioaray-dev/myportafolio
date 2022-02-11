@@ -5,28 +5,51 @@ import { IconContext } from 'react-icons'
 import { HiSun, HiMoon } from 'react-icons/hi'
 import { useTranslation, i18n } from 'next-i18next'
 
-export default function Navbar(props: any) {
+export default function Navbar() {
   const [language, setLanguage] = useState('es')
+
+  // Button Change Lenguage
   const handleClick = () => {
     language == 'es' ? setLanguage('en') : setLanguage('es')
     i18n.changeLanguage(language)
   }
 
+  // Set UseTranslation
   const { t } = useTranslation('common')
 
+  // Set Theme
   const { theme, setTheme } = useTheme()
 
-  const initialState = `${theme}`
-  const [buttonText, setButtonText] = useState(initialState) //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState
+  // Determitades Theme and set String true and false
+  var hoTheme = `${theme}`
+  if (hoTheme === `dark`) {
+    hoTheme = 'true'
+  }
+  if (hoTheme === `light`) {
+    hoTheme = 'false'
+  }
+  // Determitades Theme and set Boolean true and false
+  var strintheme = `${theme}`
+  if (strintheme === `dark`) {
+    strintheme = JSON.parse('true')
+  }
+  if (strintheme === `light`) {
+    strintheme = JSON.parse('false')
+  }
 
-  const [state, setState] = useState(false)
+  // Set State tue and false for buttom Theme Mode
+
+  const [state, setState] = useState(hoTheme)
+  // console.log(hoTheme)
+  //console.log(strintheme)
+
   return (
     <>
       <section className="container" id="Navbar">
         <nav className="navbar">
           <div className="max__container navbar__grid">
-            <Link href={''}>
-              <a>
+            <Link href="/">
+              <a href="/">
                 <picture className="navbar__logo">
                   <img className="navbar__img" src="/navbar/mayor.svg" alt="" height="30px" />
                   <h2>Celsius Aray</h2>
@@ -35,54 +58,40 @@ export default function Navbar(props: any) {
               </a>
             </Link>
             <ul className="flex__grid">
-              <Link href={''}>
-                <a>
+              <Link href="/">
+                <a href="/">
                   <li>{t('saludo')}</li>
                 </a>
               </Link>
-              <Link href={''}>
-                <a>
+              <Link href="/">
+                <a href="/">
                   <li>{t('saludo')}</li>
                 </a>
               </Link>
-              <Link href={''}>
-                <a>
+              <Link href="/">
+                <a href="/">
                   <li>{t('saludo')}</li>
                 </a>
               </Link>
-              {/* 
-              <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em', title: '{theme} Mode' }}>
-                <button onClick={() => (setTheme('light'), setButtonText(`${theme}`))}>
-                  <HiSun />
-                  {buttonText}
-                </button>
-              </IconContext.Provider>
-              <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em', title: '{theme} Mode' }}>
-                <button onClick={() => (setTheme('dark'), setButtonText(`${theme}`))}>
-                  <HiMoon />
-                  {buttonText}
-                </button>
-              </IconContext.Provider>
-              */}
+
               <button
                 className="btn_themeMode"
                 onClick={() => {
-                  setState((previousState) => !previousState)
+                  setState((previousState: any) => !previousState)
                 }}
-                data-testid="toggle"
               >
                 {state === true ? (
-                  <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
-                    <div onClick={() => setTheme('dark')} className="btn_themeMode-sun">
-                      <HiSun />
-                      <span className="btn_themeMode-span">{t('themeLightMode')}</span>
-                    </div>
-                  </IconContext.Provider>
-                ) : (
                   <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
                     <div onClick={() => setTheme('light')} className="btn_themeMode-moon">
                       <HiMoon />
                       <span className="btn_themeMode-span">{t('themeDarkMode')}</span>
+                    </div>
+                  </IconContext.Provider>
+                ) : (
+                  <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
+                    <div onClick={() => setTheme('dark')} className="btn_themeMode-sun">
+                      <HiSun />
+                      <span className="btn_themeMode-span">{t('themeLightMode')}</span>
                     </div>
                   </IconContext.Provider>
                 )}

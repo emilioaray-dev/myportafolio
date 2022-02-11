@@ -5,6 +5,6 @@
   "themeLightMode": "Modo Claro",
   "example": "Perros",
   "current": "El tema actual es",
-  "Oscuro": "Oscuro",
-  "Claro": "Claro"
+  "oscuro": "Oscuro",
+  "claro": "Claro"
 }

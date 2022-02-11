@@ -5,29 +5,18 @@ import { useTranslation } from 'next-i18next'
 export default function Hero() {
   const { theme, setTheme } = useTheme()
   const { t } = useTranslation('common')
-  {
-    /* 
-  let tema = { theme }
-  if (theme) {
-    {theme} = 'dark'
-  } else {
-    return 'temaDark'
-    console.log({theme})
-  }
-*/
-  }
 
-  var darkTheme = `${theme}`
+  let darkTheme = `${theme}`
   if (darkTheme === `dark`) {
-    darkTheme = 'Oscuro'
+    darkTheme = 'oscuro'
   }
   if (darkTheme === `light`) {
-    darkTheme = 'Claro'
+    darkTheme = 'claro'
   }
 
   return (
     <>
-      <section className="container" id="Hero">
+      <section className="container">
         <div className="hero2"></div>
         <div className="max__container">
           <div>{t('example')}</div>

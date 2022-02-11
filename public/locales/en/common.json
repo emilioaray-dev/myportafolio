@@ -5,6 +5,6 @@
   "themeLightMode": "Light Mode",
   "example": "Dogs",
   "current": "The current theme is",
-  "Oscuro": "Dark",
-  "Claro": "Light"
+  "oscuro": "Dark",
+  "claro": "Light"
 }
