@@ -2,5 +2,7 @@
   "title": "Celsius E Aray | English",
   "saludo": "Hi",
   "themeDarkMode": "Dark Mode",
-  "themeLightMode": "Light Mode"
+  "themeLightMode": "Light Mode",
+  "example": "Dogs",
+  "current": "The current theme is"
 }

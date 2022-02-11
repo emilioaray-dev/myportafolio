@@ -34,7 +34,7 @@ export default function Navbar(props: any) {
                 </picture>
               </a>
             </Link>
-            <ul>
+            <ul className="flex__grid">
               <Link href={''}>
                 <a>
                   <li>{t('saludo')}</li>
@@ -73,22 +73,26 @@ export default function Navbar(props: any) {
               >
                 {state === true ? (
                   <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
-                    <button onClick={() => setTheme('dark')}>
+                    <button onClick={() => setTheme('dark')} className="btn__themeMode-sun">
                       <HiSun />
-                      <span>{t('themeLightMode')}</span>
+                      <span className="btn__themeMode-span">{t('themeLightMode')}</span>
                     </button>
                   </IconContext.Provider>
                 ) : (
                   <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
-                    <button onClick={() => setTheme('light')}>
+                    <button onClick={() => setTheme('light')} className="btn__themeMode-moon">
                       <HiMoon />
-                      <span>{t('themeDarkMode')}</span>
+                      <span className="btn__themeMode-span">{t('themeDarkMode')}</span>
                     </button>
                   </IconContext.Provider>
                 )}
               </button>
-              <button className="btn__translate" onClick={handleClick}>
-                {i18n.language == 'es' ? <span>ES</span> : <span>EN</span>}
+              <button onClick={handleClick} className="btn__translate">
+                {i18n.language == 'es' ? (
+                  <span className="btn__translate-span">ES</span>
+                ) : (
+                  <span className="btn__translate-span">EN</span>
+                )}
               </button>
             </ul>
           </div>
@@ -114,7 +118,7 @@ export default function Navbar(props: any) {
           font-family: 'Grechen Fuemen', cursive;
         }
 
-        ul {
+        .flex__grid {
           display: flex;
           list-style-type: none;
           align-items: center;
@@ -134,18 +138,20 @@ export default function Navbar(props: any) {
           border-radius: 100%;
           background: var(--colorBlack);
           margin-left: -0.5rem;
+          border: none;
         }
 
-        .btn__translate span {
+        .btn__translate-span {
           width: 100%;
-          margin-left: 0rem;
           color: var(--colorWhite);
         }
         .btn__themeMode {
           min-width: 8.32rem;
         }
 
-        button {
+        .btn__themeMode,
+        .btn__themeMode-moon,
+        .btn__themeMode-sun {
           display: flex;
           align-items: center;
           background: transparent;
@@ -153,32 +159,29 @@ export default function Navbar(props: any) {
           color: var(--colorWhite);
         }
 
-        button > span {
-          margin-left: 0.2rem;
-        }
-
         .navbar__logo {
           display: flex;
           align-items: center;
         }
 
-        @media (max-width: 480px) {
-          ul > a,
+        @media (max-width: 620px) {
+          .flex__grid > a,
           a > li {
             /* Hide all li */
             display: none;
           }
 
-          ul {
-            justify-content: flex-start;
-            gap: 1rem;
+          .flex__grid {
+            justify-content: center;
+            width: 100%;
           }
 
           .btn__themeMode {
             min-width: auto;
+            margin-left: 0.5rem;
           }
 
-          button > span {
+          .btn__themeMode-span {
             /* Hide all Span */
             display: none;
           }

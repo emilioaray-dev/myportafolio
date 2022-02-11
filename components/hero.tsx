@@ -1,15 +1,19 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
+import { useTranslation } from 'next-i18next'
 
 export default function Hero() {
   const { theme, setTheme } = useTheme()
+  const { t } = useTranslation('common')
   return (
     <>
       <section className="container" id="Hero">
         <div className="hero2"></div>
         <div className="max__container">
-          <div>Perros</div>
-          <div>The current theme is: {theme}</div>
+          <div>{t('example')}</div>
+          <div>
+            {t('current')}: {theme}
+          </div>
         </div>
       </section>
 
