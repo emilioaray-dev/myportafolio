@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import Navbar from '../components/navbar'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { GetStaticProps } from 'next'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
   )
 }
 
-export const getStaticProps = async ({ locale }) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },
