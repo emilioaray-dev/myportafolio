@@ -87,13 +87,13 @@ export default function Navbar(props: any) {
                   </IconContext.Provider>
                 )}
               </button>
-              <div className="btn_translate" onClick={handleClick}>
+              <button className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
                   <span className="btn_translate-span">ES</span>
                 ) : (
                   <span className="btn_translate-span">EN</span>
                 )}
-              </div>
+              </button>
             </ul>
           </div>
         </nav>
