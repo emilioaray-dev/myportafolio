@@ -45,15 +45,15 @@ export default function Hero() {
         }
 
         .hero2 {
-          /* Background color */
+          /* Background color 
           background-color: rgba(0, 0, 0, 0.3);
 
           background: linear-gradient(rgba(17, 10, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-          /* Curved corners */
+*/
+          /* Curved corners 
           border-bottom-left-radius: 50% 30%;
           border-bottom-right-radius: 50% 30%;
-
+*/
           height: 20rem;
         }
       `}</style>

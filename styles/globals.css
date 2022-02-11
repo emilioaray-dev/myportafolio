@@ -24,6 +24,7 @@ html[data-theme='light'] {
   --colorBlack: #000;
   --colorShadow: rgba(119, 119, 119, 0.83);
   --colorMun: rgb(116, 116, 116);
+  --colorButtonTranslate: #000;
 }
 
 html[data-theme='dark'] {
@@ -32,9 +33,10 @@ html[data-theme='dark'] {
   --color-bg-toggle: #a9a9a9;
   --colorWhite: #fff;
   --colorBlack: #000;
-  --colorShadow: rgba(0, 243, 131, 0.55);
+  --colorShadow: rgba(255, 255, 255, 1);
   --colorSun: rgb(116, 116, 116);
   --colorMun: rgb(238, 238, 238);
+  --colorButtonTranslate: rgb(36, 36, 36);
 }
 
 .container {

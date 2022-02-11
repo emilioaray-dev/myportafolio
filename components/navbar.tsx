@@ -28,9 +28,9 @@ export default function Navbar(props: any) {
             <Link href={''}>
               <a>
                 <picture className="navbar__logo">
-                  <img src="/navbar/mayor.svg" alt="" height="30px" />
+                  <img className="navbar__img" src="/navbar/mayor.svg" alt="" height="30px" />
                   <h2>Celsius Aray</h2>
-                  <img src="/navbar/menor.svg" alt="" height="30px" />
+                  <img className="navbar__img" src="/navbar/menor.svg" alt="" height="30px" />
                 </picture>
               </a>
             </Link>
@@ -87,13 +87,13 @@ export default function Navbar(props: any) {
                   </IconContext.Provider>
                 )}
               </button>
-              <div className="btn_translate" onClick={handleClick}>
+              <button className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
                   <span className="btn_translate-span">ES</span>
                 ) : (
                   <span className="btn_translate-span">EN</span>
                 )}
-              </div>
+              </button>
             </ul>
           </div>
         </nav>
@@ -102,9 +102,9 @@ export default function Navbar(props: any) {
       <style jsx>{`
         #Navbar {
           position: fixed;
-          box-shadow: 1px 5px 20px 0px var(--colorShadow);
+          box-shadow: 0rem -1.7rem 2rem 1rem var(--colorShadow);
           background: transparent;
-          height: min-content;
+          height: auto;
           padding: 1rem 0rem;
           -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -116,6 +116,7 @@ export default function Navbar(props: any) {
         }
         h2 {
           font-family: 'Grechen Fuemen', cursive;
+          color: var(--background-color);
         }
 
         .flex__grid {
@@ -128,7 +129,7 @@ export default function Navbar(props: any) {
 
         li,
         h2 {
-          color: var(--colorWhite);
+          color: var(--color-text-primary);
         }
 
         .btn_translate {
@@ -139,7 +140,7 @@ export default function Navbar(props: any) {
           height: 2.5rem;
           min-width: 1rem;
           border-radius: 100%;
-          background: var(--colorBlack);
+          background: var(--colorButtonTranslate);
           margin-left: -0.5rem;
           border: none;
           user-select: none;
@@ -160,7 +161,7 @@ export default function Navbar(props: any) {
           align-items: center;
           background: transparent;
           border: none;
-          color: var(--colorWhite);
+          color: var(--color-text-primary);
         }
 
         .navbar__logo {
@@ -169,6 +170,17 @@ export default function Navbar(props: any) {
         }
 
         @media (max-width: 620px) {
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          .navbar__img {
+            width: 30px;
+          }
+          .navbar__grid {
+            display: grid;
+            grid-template-columns: 60% auto;
+          }
           .flex__grid > a,
           a > li {
             /* Hide all li */

@@ -1,9 +1,13 @@
-const { i18n } = require('./next-i18next.config')
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  i18n,
+module.exports = (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+  */
+  const nextConfig = {
+    /* config options here */
+    i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'es'
+  },
+  }
+  return nextConfig;
 }
-
-module.exports = nextConfig
