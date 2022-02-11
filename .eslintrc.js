@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['next'],
+  extends: ['next', 'stylelint-prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -16,10 +16,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'stylelint-prettier'],
   rules: {
-    'react/react-in-jsx-scope': false,
-    'react/no-unescaped-entities': false,
-    '@next/next/no-page-custom-font': false,
-    '@next/next/no-img-element': false,
-    'prettier/prettier': true,
+    'react/react-in-jsx-scope': "off",
+    'react/no-unescaped-entities': 0,
+    '@next/next/no-img-element': "off",
+    'prettier/prettier': 1,
   },
 }
