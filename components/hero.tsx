@@ -5,6 +5,26 @@ import { useTranslation } from 'next-i18next'
 export default function Hero() {
   const { theme, setTheme } = useTheme()
   const { t } = useTranslation('common')
+  {
+    /* 
+  let tema = { theme }
+  if (theme) {
+    {theme} = 'dark'
+  } else {
+    return 'temaDark'
+    console.log({theme})
+  }
+*/
+  }
+
+  var darkTheme = `${theme}`
+  if (darkTheme === `dark`) {
+    darkTheme = 'Oscuro'
+  }
+  if (darkTheme === `light`) {
+    darkTheme = 'Claro'
+  }
+
   return (
     <>
       <section className="container" id="Hero">
@@ -12,7 +32,7 @@ export default function Hero() {
         <div className="max__container">
           <div>{t('example')}</div>
           <div>
-            {t('current')}: {theme}
+            {t('current')}: {t(darkTheme)}
           </div>
         </div>
       </section>

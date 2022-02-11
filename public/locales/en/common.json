@@ -4,5 +4,7 @@
   "themeDarkMode": "Dark Mode",
   "themeLightMode": "Light Mode",
   "example": "Dogs",
-  "current": "The current theme is"
+  "current": "The current theme is",
+  "Oscuro": "Dark",
+  "Claro": "Light"
 }
