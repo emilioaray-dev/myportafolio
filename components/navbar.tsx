@@ -65,7 +65,7 @@ export default function Navbar(props: any) {
               </IconContext.Provider>
               */}
               <button
-                className="btn__themeMode"
+                className="btn_themeMode"
                 onClick={() => {
                   setState((previousState) => !previousState)
                 }}
@@ -73,25 +73,25 @@ export default function Navbar(props: any) {
               >
                 {state === true ? (
                   <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
-                    <button onClick={() => setTheme('dark')} className="btn__themeMode-sun">
+                    <button onClick={() => setTheme('dark')} className="btn_themeMode-sun">
                       <HiSun />
-                      <span className="btn__themeMode-span">{t('themeLightMode')}</span>
+                      <span className="btn_themeMode-span">{t('themeLightMode')}</span>
                     </button>
                   </IconContext.Provider>
                 ) : (
                   <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
-                    <button onClick={() => setTheme('light')} className="btn__themeMode-moon">
+                    <button onClick={() => setTheme('light')} className="btn_themeMode-moon">
                       <HiMoon />
-                      <span className="btn__themeMode-span">{t('themeDarkMode')}</span>
+                      <span className="btn_themeMode-span">{t('themeDarkMode')}</span>
                     </button>
                   </IconContext.Provider>
                 )}
               </button>
               <button onClick={handleClick} className="btn_translate">
                 {i18n.language == 'es' ? (
-                  <span className="btn__translate-span">ES</span>
+                  <span className="btn_translate-span">ES</span>
                 ) : (
-                  <span className="btn__translate-span">EN</span>
+                  <span className="btn_translate-span">EN</span>
                 )}
               </button>
             </ul>
@@ -141,17 +141,17 @@ export default function Navbar(props: any) {
           border: none;
         }
 
-        .btn__translate-span {
+        .btn_translate-span {
           width: 100%;
           color: var(--colorWhite);
         }
-        .btn__themeMode {
+        .btn_themeMode {
           min-width: 8.32rem;
         }
 
-        .btn__themeMode,
-        .btn__themeMode-moon,
-        .btn__themeMode-sun {
+        .btn_themeMode,
+        .btn_themeMode-moon,
+        .btn_themeMode-sun {
           display: flex;
           align-items: center;
           background: transparent;
@@ -176,12 +176,12 @@ export default function Navbar(props: any) {
             width: 100%;
           }
 
-          .btn__themeMode {
+          .btn_themeMode {
             min-width: auto;
             margin-left: 0.5rem;
           }
 
-          .btn__themeMode-span {
+          .btn_themeMode-span {
             /* Hide all Span */
             display: none;
           }
