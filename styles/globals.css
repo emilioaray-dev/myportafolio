@@ -3,6 +3,7 @@
   --background-color: var(--background-color);
   --foreground: var(--color-bg-toggle);
   --colorShadow: var(--colorShadow);
+  color-scheme: dark;
 }
 
 html,

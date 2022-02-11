@@ -73,27 +73,27 @@ export default function Navbar(props: any) {
               >
                 {state === true ? (
                   <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
-                    <button onClick={() => setTheme('dark')} className="btn_themeMode-sun">
+                    <div onClick={() => setTheme('dark')} className="btn_themeMode-sun">
                       <HiSun />
                       <span className="btn_themeMode-span">{t('themeLightMode')}</span>
-                    </button>
+                    </div>
                   </IconContext.Provider>
                 ) : (
                   <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
-                    <button onClick={() => setTheme('light')} className="btn_themeMode-moon">
+                    <div onClick={() => setTheme('light')} className="btn_themeMode-moon">
                       <HiMoon />
                       <span className="btn_themeMode-span">{t('themeDarkMode')}</span>
-                    </button>
+                    </div>
                   </IconContext.Provider>
                 )}
               </button>
-              <button onClick={handleClick} className="btn_translate">
+              <div className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
                   <span className="btn_translate-span">ES</span>
                 ) : (
                   <span className="btn_translate-span">EN</span>
                 )}
-              </button>
+              </div>
             </ul>
           </div>
         </nav>
@@ -132,6 +132,9 @@ export default function Navbar(props: any) {
         }
 
         .btn_translate {
+          display: grid;
+          align-items: center;
+          justify-content: center;
           width: 2.5rem;
           height: 2.5rem;
           min-width: 1rem;
@@ -139,6 +142,7 @@ export default function Navbar(props: any) {
           background: var(--colorBlack);
           margin-left: -0.5rem;
           border: none;
+          user-select: none;
         }
 
         .btn_translate-span {
