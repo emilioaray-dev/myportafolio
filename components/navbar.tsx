@@ -4,11 +4,14 @@ import { useTheme } from 'next-themes'
 import { IconContext } from 'react-icons'
 import { HiSun, HiMoon } from 'react-icons/hi'
 import { useTranslation, i18n } from 'next-i18next'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+  // Set Default Language
+  const router = useRouter()
   const [language, setLanguage] = useState('es')
 
-  // Button Change Lenguage
+  // Button Change Language
   const handleClick = () => {
     language == 'es' ? setLanguage('en') : setLanguage('es')
     i18n.changeLanguage(language)
@@ -28,7 +31,9 @@ export default function Navbar() {
   if (hoTheme === `light`) {
     hoTheme = 'false'
   }
+
   // Determitades Theme and set Boolean true and false
+  /*
   var strintheme = `${theme}`
   if (strintheme === `dark`) {
     strintheme = JSON.parse('true')
@@ -36,13 +41,13 @@ export default function Navbar() {
   if (strintheme === `light`) {
     strintheme = JSON.parse('false')
   }
-
+*/
   // Set State tue and false for buttom Theme Mode
 
   const [state, setState] = useState(hoTheme)
   // console.log(hoTheme)
   //console.log(strintheme)
-  // console.log(language)
+  //console.log(language)
 
   return (
     <>
@@ -99,13 +104,13 @@ export default function Navbar() {
               </button>
               <button className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
-                  <div onClick={() => setLanguage('en')} className="btn_translate-span">
+                  <a onClick={() => [setLanguage('en'), router.push('/en')]} className="btn_translate-span">
                     ES
-                  </div>
+                  </a>
                 ) : (
-                  <div onClick={() => setLanguage('es')} className="btn_translate-span">
+                  <a onClick={() => [setLanguage('es'), router.push('/es')]} className="btn_translate-span">
                     EN
-                  </div>
+                  </a>
                 )}
               </button>
             </ul>

@@ -2,12 +2,13 @@ module.exports = (phase, { defaultConfig }) => {
   /**
    * @type {import('next').NextConfig}
   */
-  const { i18n } = require('./next-i18next.config');
+
   const nextConfig = {
     /* config options here */
     i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en'
+    locales: ['es', 'en'],
+    defaultLocale: 'es',
+    localeDetection: false,
     },
      typescript: {
     // !! WARN !!

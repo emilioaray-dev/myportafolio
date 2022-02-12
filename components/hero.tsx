@@ -7,11 +7,11 @@ export default function Hero() {
   const { t } = useTranslation('common')
 
   let darkTheme = `${theme}`
-  if (darkTheme === `dark`) {
-    darkTheme = 'oscuro'
+  if (darkTheme == `dark`) {
+    darkTheme = 'negro'
   }
-  if (darkTheme === `light`) {
-    darkTheme = 'claro'
+  if (darkTheme == `light`) {
+    darkTheme = 'blanco'
   }
 
   return (
