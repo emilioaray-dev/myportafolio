@@ -42,6 +42,7 @@ export default function Navbar() {
   const [state, setState] = useState(hoTheme)
   // console.log(hoTheme)
   //console.log(strintheme)
+  // console.log(language)
 
   return (
     <>
@@ -98,9 +99,13 @@ export default function Navbar() {
               </button>
               <button className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
-                  <span className="btn_translate-span">ES</span>
+                  <div onClick={() => setLanguage('en')} className="btn_translate-span">
+                    ES
+                  </div>
                 ) : (
-                  <span className="btn_translate-span">EN</span>
+                  <div onClick={() => setLanguage('es')} className="btn_translate-span">
+                    EN
+                  </div>
                 )}
               </button>
             </ul>
