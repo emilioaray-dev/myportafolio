@@ -6,7 +6,7 @@ import { appWithTranslation } from 'next-i18next'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme="system">
       <Component {...pageProps} />
     </ThemeProvider>
   )

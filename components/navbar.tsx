@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { IconContext } from 'react-icons'
 import { HiSun, HiMoon } from 'react-icons/hi'
@@ -24,6 +24,8 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme()
 
   // Determitades Theme and set String true and false
+
+  /* 
   var hoTheme = `${theme}`
   if (hoTheme === `dark`) {
     hoTheme = 'true'
@@ -31,9 +33,10 @@ export default function Navbar() {
   if (hoTheme === `light`) {
     hoTheme = 'false'
   }
+*/
 
   // Determitades Theme and set Boolean true and false
-  /*
+
   var strintheme = `${theme}`
   if (strintheme === `dark`) {
     strintheme = JSON.parse('true')
@@ -41,13 +44,26 @@ export default function Navbar() {
   if (strintheme === `light`) {
     strintheme = JSON.parse('false')
   }
+  if (`${theme}` === `undefined`) {
+    strintheme = `dark`
+    strintheme = JSON.parse('true')
+  }
+
+  /*
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  if (!mounted) return null
 */
+
   // Set State tue and false for buttom Theme Mode
 
-  const [state, setState] = useState(hoTheme)
+  const [state, setState] = useState(strintheme)
+
+  const { resolvedTheme } = useTheme()
   // console.log(hoTheme)
-  //console.log(strintheme)
+  console.log(`${theme} mode`)
   //console.log(language)
+  // console.log(hoTheme)
 
   return (
     <>
@@ -87,19 +103,19 @@ export default function Navbar() {
                 }}
               >
                 {state === true ? (
-                  <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
-                    <div onClick={() => setTheme('light')} className="btn_themeMode-moon">
+                  <div onClick={() => setTheme('light')} className="btn_themeMode-moon">
+                    <IconContext.Provider value={{ color: 'var(--colorMun)', size: '2em' }}>
                       <HiMoon />
                       <span className="btn_themeMode-span">{t('themeDarkMode')}</span>
-                    </div>
-                  </IconContext.Provider>
+                    </IconContext.Provider>
+                  </div>
                 ) : (
-                  <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
-                    <div onClick={() => setTheme('dark')} className="btn_themeMode-sun">
+                  <div onClick={() => setTheme('dark')} className="btn_themeMode-sun">
+                    <IconContext.Provider value={{ color: 'var(--colorSun)', size: '2em' }}>
                       <HiSun />
                       <span className="btn_themeMode-span">{t('themeLightMode')}</span>
-                    </div>
-                  </IconContext.Provider>
+                    </IconContext.Provider>
+                  </div>
                 )}
               </button>
               <button className="btn_translate" onClick={handleClick}>
