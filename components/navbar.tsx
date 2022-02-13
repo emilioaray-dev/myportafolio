@@ -61,7 +61,7 @@ export default function Navbar() {
 
   const { resolvedTheme } = useTheme()
   // console.log(hoTheme)
-  console.log(`${theme} mode`)
+  // console.log(`${theme} mode`)
   //console.log(language)
   // console.log(hoTheme)
 
@@ -137,6 +137,7 @@ export default function Navbar() {
       <style jsx>{`
         #Navbar {
           position: fixed;
+          z-index: 1;
           box-shadow: 0rem -1.7rem 2rem 1rem var(--colorShadow);
           background: transparent;
           height: auto;
@@ -151,7 +152,7 @@ export default function Navbar() {
         }
         h2 {
           font-family: 'Grechen Fuemen', cursive;
-          color: var(--background-color);
+          color: var(--colorTextLogo);
         }
 
         .flex__grid {
@@ -162,9 +163,8 @@ export default function Navbar() {
           gap: 1rem;
         }
 
-        li,
-        h2 {
-          color: var(--color-text-primary);
+        li {
+          color: var(--colorTextLogo);
         }
 
         .btn_translate {
@@ -174,11 +174,12 @@ export default function Navbar() {
           width: 2.5rem;
           height: 2.5rem;
           min-width: 1rem;
-          border-radius: 100%;
+          border-radius: 0.7rem;
           background: var(--colorButtonTranslate);
           margin-left: -0.5rem;
           border: none;
           user-select: none;
+          box-shadow: 2px 4px 3px 0px rgb(153 145 145 / 20%);
         }
 
         .btn_translate-span {
@@ -196,7 +197,11 @@ export default function Navbar() {
           align-items: center;
           background: transparent;
           border: none;
-          color: var(--color-text-primary);
+          color: var(--colorTextHeader);
+          border-radius: 0.7rem;
+          padding: 0.1rem;
+          background: var(--colorButtonTheme);
+          box-shadow: 2px 4px 3px 0px rgb(153 145 145 / 20%);
         }
 
         .navbar__logo {
