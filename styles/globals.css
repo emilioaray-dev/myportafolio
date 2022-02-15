@@ -17,6 +17,7 @@ body {
 html[data-theme='light'] {
   --color-text-primary: #27201a;
   --background-color: #fff;
+  --gradientNav: transparent;
   --colorSun: rgba(252, 212, 64, 0.9);
   --color-bg-toggle: #1e90ff;
   --colorWhite: #fff;
@@ -24,16 +25,20 @@ html[data-theme='light'] {
   --colorShadow: rgba(56, 56, 56, 1);
   --colorMun: rgb(150, 150, 150);
   --colorButtonTranslate: #000;
+  --shadowButton: 2px 4px 3px 0px rgba(56, 56, 56, 0.5);
   --colorTextHeader: #fff;
   --colorTextLogo: #1e212b;
   --colorButtonTheme: #a7a7a7;
   --colorBanner0: #ffffff;
   --colorBanner1: #a3a3a3;
+  --colorViolet: #a512fb;
+  --colorCardBackground: rgba(255, 255, 255, 0.7);
 }
 
 html[data-theme='dark'] {
   --color-text-primary: #e3e3e3;
   --background-color: #030303;
+  --gradientNav: transparent;
   --color-bg-toggle: #a9a9a9;
   --colorWhite: #fff;
   --colorBlack: #000;
@@ -41,23 +46,12 @@ html[data-theme='dark'] {
   --colorSun: rgb(116, 116, 116);
   --colorMun: rgb(238, 238, 238);
   --colorButtonTranslate: rgb(36, 36, 36);
+  --shadowButton: 2px 4px 3px 0px rgba(153, 145, 145, 0.2);
   --colorTextHeader: #e9e9e9;
   --colorTextLogo: #e9e9e9;
   --colorButtonTheme: rgb(36, 36, 36);
   --colorBanner0: #1e212b;
   --colorBanner1: #090b11;
-}
-
-.container {
-  display: grid;
-  width: 100%;
-  overflow: hidden;
-}
-
-.max__container {
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-  max-width: var(--max-widthContainer);
-  padding: 0 1rem;
+  --colorViolet: #a512fb;
+  --colorCardBackground: rgba(18, 18, 18, 0.7);
 }

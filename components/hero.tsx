@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import { useTranslation } from 'next-i18next'
 
@@ -16,7 +17,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="container">
+      <section id="Hero" className="container">
         <div className="banner_background">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,11 +70,21 @@ export default function Hero() {
               </linearGradient>
             </defs>
           </svg>
-          <div className="max__container">
-            <div className="banner_topMargen">
-              <div>{t('example')}</div>
-              <div>
-                {t('current')}: {t(darkTheme)}
+        </div>
+        <div className="max__container">
+          <div className="banner_topMargen">
+            <div className="hero_gred">
+              <div className="hero_card">
+                <h1 className="hero_h1">
+                  <span className="hero_h1-hi">{t('hi')}</span>
+                  <br />
+                  <span className="hero_h1-name">{t('name')}</span>
+                  <br />
+                  <span className="hero_h1-dev">{t('dev')}</span>
+                </h1>
+              </div>
+              <div className="hero_imgGred">
+                <img src="/assets/VectorsHero.svg" layout="responsive" width={643} height={584} />
               </div>
             </div>
           </div>
@@ -81,21 +92,118 @@ export default function Hero() {
       </section>
 
       <style jsx>{`
-        .banner_background > svg {
+        .container {
+          display: grid;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .max__container {
+          display: grid;
+          margin: 0 auto;
+          width: 100%;
+          max-width: var(--max-widthContainer);
+          padding: 0 1rem;
+          position: relative;
+          min-height: 100vh;
+        }
+        .banner_background {
           position: absolute;
           width: 100%;
           height: 100vh;
         }
-
         .banner_topMargen {
-          position: absolute;
-          margin-top: 82px;
+          margin-top: 6rem;
         }
+        .hero_gred {
+          display: grid;
+          grid-template-columns: 45% auto;
+          align-items: center;
+          height: calc(100% - 6rem); /** //!! Importan 82px size .banner_topMargen: */
+        }
+        .hero_card {
+        }
+        .hero_h1 {
+          font-size: 3rem;
+          font-weight: 300;
+          line-height: 1.1;
+          border-radius: 1rem;
+          padding: 3rem 2rem;
+          background: var(--colorCardBackground);
+        }
+
+        .hero_h1-hi {
+          color: var(--colorMun);
+        }
+
+        .hero_h1-name {
+          font-family: 'Grechen Fuemen', cursive;
+          font-size: 5rem;
+        }
+        .hero_h1-dev {
+          color: var(--colorViolet);
+          font-style: italic;
+        }
+
+        .hero_imgGred {
+          padding: 0rem 0rem 0rem 1rem;
+          transform: rotateY(-34deg) rotateX(15deg);
+          transform-origin: center;
+          -webkit-box-reflect: right -202px -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from(transparent),
+              to(rgba(255, 255, 255, 0.5))
+            );
+          transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+          animation-duration: 1s;
+        }
+
+        .hero_imgGred:hover {
+          transform: rotateY(0deg) rotateX(0deg);
+          -webkit-box-reflect: right -625px -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from(transparent),
+              to(rgba(255, 255, 255, 0.5))
+            );
+          animation-iteration-count: 1;
+        }
+
         .colorBannerCero {
           stop-color: var(--colorBanner0);
         }
         .colorBannerUno {
           stop-color: var(--colorBanner1);
+        }
+        @media (max-width: 654px) {
+          .hero_gred {
+            grid-template-columns: auto;
+            text-align: center;
+            align-items: start;
+            height: 100%;
+          }
+          .hero_card {
+            align-self: center;
+          }
+          .hero_h1 {
+            font-size: 7vw;
+          }
+          .hero_h1-name {
+            font-size: 13vw;
+          }
+
+          .hero_imgGred {
+            padding: 0rem 0rem 0rem 0rem;
+            -webkit-box-reflect: unset;
+            align-self: center;
+}
+          }
+          .hero_imgGred:hover {
+            -webkit-box-reflect: unset;
+          }
         }
       `}</style>
     </>

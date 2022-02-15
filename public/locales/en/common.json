@@ -1,6 +1,8 @@
 {
   "title": "Celsius E Aray | English",
-  "saludo": "Hi",
+  "hi": "Hi!, I'm",
+  "name": "Celsius Aray",
+  "dev": "Frontend Developer",
   "themeDarkMode": "Dark Mode",
   "themeLightMode": "Light Mode",
   "example": "Dogs",

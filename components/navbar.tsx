@@ -67,15 +67,15 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="container" id="Navbar">
+      <section id="Navbar" className="container">
         <nav className="navbar">
           <div className="max__container navbar__grid">
             <Link href="/">
               <a href="/">
                 <picture className="navbar__logo">
-                  <img className="navbar__img" src="/navbar/mayor.svg" alt="" height="30px" />
+                  <img className="navbar__img" src="/assets/img/navbar/mayor.svg" alt="" height="30px" />
                   <h2>Celsius Aray</h2>
-                  <img className="navbar__img" src="/navbar/menor.svg" alt="" height="30px" />
+                  <img className="navbar__img" src="/assets/img/navbar/menor.svg" alt="" height="30px" />
                 </picture>
               </a>
             </Link>
@@ -135,15 +135,28 @@ export default function Navbar() {
       </section>
 
       <style jsx>{`
+        .container {
+          display: grid;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .max__container {
+          display: grid;
+          margin: 0 auto;
+          width: 100%;
+          max-width: var(--max-widthContainer);
+          padding: 0 1rem;
+        }
         #Navbar {
           position: fixed;
           z-index: 1;
           box-shadow: 0rem -1.7rem 2rem 1rem var(--colorShadow);
-          background: transparent;
+          background: var(--gradientNav);
           height: auto;
           padding: 1rem 0rem;
-          -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
         }
 
         .navbar__grid {
@@ -179,7 +192,7 @@ export default function Navbar() {
           margin-left: -0.5rem;
           border: none;
           user-select: none;
-          box-shadow: 2px 4px 3px 0px rgb(153 145 145 / 20%);
+          box-shadow: var(--shadowButton);
         }
 
         .btn_translate-span {
@@ -188,6 +201,7 @@ export default function Navbar() {
         }
         .btn_themeMode {
           min-width: 8.32rem;
+          box-shadow: var(--shadowButton);
         }
 
         .btn_themeMode,
@@ -201,7 +215,6 @@ export default function Navbar() {
           border-radius: 0.7rem;
           padding: 0.1rem;
           background: var(--colorButtonTheme);
-          box-shadow: 2px 4px 3px 0px rgb(153 145 145 / 20%);
         }
 
         .navbar__logo {
@@ -209,9 +222,9 @@ export default function Navbar() {
           align-items: center;
         }
 
-        @media (max-width: 620px) {
+        @media (max-width: 654px) {
           h2 {
-            font-size: 1.5rem;
+            font-size: max(1.5rem, 6vw);
           }
 
           .navbar__img {
