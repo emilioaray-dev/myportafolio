@@ -84,7 +84,7 @@ export default function Hero() {
                 </h1>
               </div>
               <div className="hero_imgGred">
-                <img src="/assets/VectorsHero.svg" layout="responsive" width={643} height={584} />
+                <img className="hero_img" src="/assets/VectorsHero.svg" layout="responsive" width={643} height={584} />
               </div>
             </div>
           </div>
@@ -120,6 +120,11 @@ export default function Hero() {
           grid-template-columns: 45% auto;
           align-items: center;
           height: calc(100% - 6rem); /** //!! Importan 82px size .banner_topMargen: */
+        }
+
+        .hero_img {
+          width: 100%;
+          height: auto;
         }
         .hero_card {
         }
