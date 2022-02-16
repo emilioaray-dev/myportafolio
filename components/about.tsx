@@ -86,7 +86,7 @@ export default function About() {
           margin-block-end: 1em;
         }
 
-        @media (max-width: 654px) {
+        @media (max-width: 834px) {
           .About_card {
             background-image: radial-gradient(circle at 50% 25%, var(--colorB1Gradient) 0%, transparent 57%),
               radial-gradient(circle at 50% 98%, var(--colorB2Gradient) 0%, transparent 35%),

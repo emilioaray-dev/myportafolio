@@ -167,7 +167,7 @@ export default function Hero() {
         .colorBannerUno {
           stop-color: var(--colorBanner1);
         }
-        @media (max-width: 654px) {
+        @media (max-width: 834px) {
           .hero_gred {
             grid-template-columns: auto;
             text-align: center;
