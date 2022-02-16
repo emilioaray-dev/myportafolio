@@ -106,6 +106,7 @@ export default function Hero() {
           max-width: var(--max-widthContainer);
           padding: 0 1rem;
           position: relative;
+          min-height: 100vh;
         }
         .banner_background {
           position: absolute;
@@ -119,7 +120,7 @@ export default function Hero() {
           display: grid;
           grid-template-columns: 45% auto;
           align-items: center;
-          height: calc(100% - var(--container_topMargin)); /** //!! Importan size container_topMargin */
+          height: calc(100vh - var(--container_topMargin)); /** //!! Importan size container_topMargin */
         }
 
         .hero_img {
