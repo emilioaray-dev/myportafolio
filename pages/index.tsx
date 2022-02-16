@@ -5,7 +5,7 @@ import Navbar from '../components/navbar'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
-import About from '../components/About'
+import About from '../components/about'
 import Skill from '../components/skill'
 
 const Home: NextPage = () => {
