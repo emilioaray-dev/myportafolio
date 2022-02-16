@@ -96,6 +96,7 @@ export default function Hero() {
           display: grid;
           width: 100%;
           overflow: hidden;
+          min-height: calc(100% + 2rem);
         }
 
         .max__container {
@@ -105,12 +106,11 @@ export default function Hero() {
           max-width: var(--max-widthContainer);
           padding: 0 1rem;
           position: relative;
-          min-height: 100vh;
         }
         .banner_background {
           position: absolute;
           width: 100%;
-          height: 100vh;
+          height: calc(100vh + 4rem);
         }
         .container_topMargen {
           margin-top: var(--container_topMargin);
@@ -152,13 +152,13 @@ export default function Hero() {
 
         .hero_imgGred {
           padding: 0rem 0rem 0rem 1rem;
-            transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg);
+          transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg);
           transform-origin: right;
           transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
         }
 
         .hero_imgGred:hover {
-          transform: scale(1) skew(0deg, 0deg) rotateY(0deg) ;
+          transform: scale(1) skew(0deg, 0deg) rotateY(0deg);
         }
 
         .colorBannerCero {
@@ -176,19 +176,20 @@ export default function Hero() {
           }
           .hero_card {
             align-self: center;
+            padding: 2rem 1rem;
           }
           .hero_h1 {
-            font-size: 7vw;
+            font-size: 4vw;
           }
           .hero_h1-name {
-            font-size: 13vw;
+            font-size: 9vw;
           }
 
           .hero_imgGred {
-            padding: 0rem 0rem 0rem 0rem;
+            padding: 0.5rem 0rem 4rem;
+            transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg) translate(-4.5rem, -2rem);
             -webkit-box-reflect: unset;
             align-self: center;
-}
           }
           .hero_imgGred:hover {
             -webkit-box-reflect: unset;

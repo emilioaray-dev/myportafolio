@@ -166,6 +166,8 @@ export default function Navbar() {
         h2 {
           font-family: 'Grechen Fuemen', cursive;
           color: var(--colorTextLogo);
+          inline-size: 9rem;
+          text-align: center;
         }
 
         .flex__grid {
@@ -224,6 +226,7 @@ export default function Navbar() {
         .navbar__logo {
           display: flex;
           align-items: center;
+          flex-direction: row;
         }
 
         @media (max-width: 654px) {
