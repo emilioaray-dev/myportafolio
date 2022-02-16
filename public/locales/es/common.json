@@ -8,5 +8,13 @@
   "example": "Perros",
   "current": "El tema actual es",
   "negro": "Oscuro",
-  "blanco": "Claro"
+  "blanco": "Claro",
+  "about": "Acerca de mí",
+  "aboutP1": "un desarrollador front-end, amante del mundo de la tecnología y del software. Me esfuerzo por mantener un código reutilizable, mantenible y escalable, clave para crecer cualquier proyecto.",
+  "aboutP2": "Me apasiona el desarrollo de software, el aprender nuevas técnicas que aceleren el desarrollo y performance del mismo, así como el absorber nuevos conocimientos y recibir retroalimentación para compartir mis conocimientos y aprender de los demás.",
+  "aboutP3": "Espero que podamos desarrollar juntos, de ser el caso, puedes contactarme a través de mis redes sociales.",
+  "aboutP4": "¡Estoy emocionado de que creemos juntos las aplicaciones del futuro!"
+
+
+
 }

@@ -178,6 +178,10 @@ export default function Navbar() {
 
         li {
           color: var(--colorTextLogo);
+          background: var(--colorCardBackground);
+          padding: 0.5rem;
+          border-radius: var(--borderRadius_buttom);
+          backdrop-filter: blur(2px);
         }
 
         .btn_translate {
@@ -202,6 +206,8 @@ export default function Navbar() {
         .btn_themeMode {
           min-width: 8.32rem;
           box-shadow: var(--shadowButton);
+          backdrop-filter: blur(2px);
+          background: var(--colorButtonTheme);
         }
 
         .btn_themeMode,
@@ -209,12 +215,10 @@ export default function Navbar() {
         .btn_themeMode-sun {
           display: flex;
           align-items: center;
-          background: transparent;
           border: none;
           color: var(--colorTextHeader);
-          border-radius: 0.7rem;
+          border-radius: var(--borderRadius_buttom);
           padding: 0.1rem;
-          background: var(--colorButtonTheme);
         }
 
         .navbar__logo {

@@ -22,8 +22,8 @@ export default function Hero() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
-            width="auto"
-            height="auto"
+            width="100%"
+            height="100%"
             preserveAspectRatio="none"
             viewBox="0 0 970 250"
           >
@@ -45,17 +45,17 @@ export default function Hero() {
                 d="M338.35 0L970 198.86L970 231.35000000000002L152.01000000000002 0z"
                 fill="rgba(255, 255, 255, .025)"
               ></path>
-              <path d="M0 250L112.52 250L0 214.54z" fill="rgba(0, 0, 0, .1)"></path>
-              <path d="M0 214.54L112.52 250L163.55 250L0 208.03z" fill="rgba(0, 0, 0, .075)"></path>
-              <path d="M0 208.03L163.55 250L622.48 250L0 183.04z" fill="rgba(0, 0, 0, .05)"></path>
+              <path d="M0 250L112.52 250L0 214.54z" fill="rgba(255, 255, 255, .1)"></path>
+              <path d="M0 214.54L112.52 250L163.55 250L0 208.03z" fill="rgba(255, 255, 255, .075)"></path>
+              <path d="M0 208.03L163.55 250L622.48 250L0 183.04z" fill="rgba(255, 255, 255, .05)"></path>
               <path
                 d="M0 183.04000000000002L622.48 250L755.96 250L0 121.05000000000001z"
-                fill="rgba(0, 0, 0, .025)"
+                fill="rgba(255, 255, 255, .025)"
               ></path>
             </g>
             <defs>
               <mask id="SvgjsMask1024">
-                <rect width="970" height="250" fill="#ffffff"></rect>
+                <rect width="100%" height="100%" fill="#ffffff"></rect>
               </mask>
               <linearGradient
                 x1="18.56%"
@@ -72,7 +72,7 @@ export default function Hero() {
           </svg>
         </div>
         <div className="max__container">
-          <div className="banner_topMargen">
+          <div className="container_topMargen">
             <div className="hero_gred">
               <div className="hero_card">
                 <h1 className="hero_h1">
@@ -112,14 +112,14 @@ export default function Hero() {
           width: 100%;
           height: 100vh;
         }
-        .banner_topMargen {
-          margin-top: 6rem;
+        .container_topMargen {
+          margin-top: var(--container_topMargin);
         }
         .hero_gred {
           display: grid;
           grid-template-columns: 45% auto;
           align-items: center;
-          height: calc(100% - 6rem); /** //!! Importan 82px size .banner_topMargen: */
+          height: calc(100% - var(--container_topMargin)); /** //!! Importan size container_topMargin */
         }
 
         .hero_img {
@@ -127,14 +127,14 @@ export default function Hero() {
           height: auto;
         }
         .hero_card {
+          border-radius: 1rem;
+          padding: 3rem 2rem;
+          background: var(--colorCardBackground);
         }
         .hero_h1 {
           font-size: 3rem;
           font-weight: 300;
           line-height: 1.1;
-          border-radius: 1rem;
-          padding: 3rem 2rem;
-          background: var(--colorCardBackground);
         }
 
         .hero_h1-hi {
@@ -152,29 +152,13 @@ export default function Hero() {
 
         .hero_imgGred {
           padding: 0rem 0rem 0rem 1rem;
-          transform: rotateY(-34deg) rotateX(15deg);
-          transform-origin: center;
-          -webkit-box-reflect: right -202px -webkit-gradient(
-              linear,
-              left top,
-              left bottom,
-              from(transparent),
-              to(rgba(255, 255, 255, 0.5))
-            );
+            transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg);
+          transform-origin: right;
           transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
-          animation-duration: 1s;
         }
 
         .hero_imgGred:hover {
-          transform: rotateY(0deg) rotateX(0deg);
-          -webkit-box-reflect: right -625px -webkit-gradient(
-              linear,
-              left top,
-              left bottom,
-              from(transparent),
-              to(rgba(255, 255, 255, 0.5))
-            );
-          animation-iteration-count: 1;
+          transform: scale(1) skew(0deg, 0deg) rotateY(0deg) ;
         }
 
         .colorBannerCero {

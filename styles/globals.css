@@ -3,6 +3,8 @@
   --background-color: var(--background-color);
   --foreground: var(--color-bg-toggle);
   --colorShadow: var(--colorShadow);
+  --container_topMargin: 6rem;
+  --borderRadius_buttom: 0.7rem;
 }
 
 html,
@@ -30,9 +32,13 @@ html[data-theme='light'] {
   --colorTextLogo: #1e212b;
   --colorButtonTheme: #a7a7a7;
   --colorBanner0: #ffffff;
-  --colorBanner1: #a3a3a3;
+  --colorBanner1: #090b11;
   --colorViolet: #a512fb;
   --colorCardBackground: rgba(255, 255, 255, 0.7);
+  --colorCard2Background: rgba(213, 213, 213, 0.7);
+  --colorB1Gradient: rgba(255, 255, 255, 0.32%);
+  --colorB2Gradient: rgba(100, 64, 64, 0.32%);
+  --colorB3Gradient: rgba(164, 161, 255, 0.32%);
 }
 
 html[data-theme='dark'] {
@@ -49,9 +55,13 @@ html[data-theme='dark'] {
   --shadowButton: 2px 4px 3px 0px rgba(153, 145, 145, 0.2);
   --colorTextHeader: #e9e9e9;
   --colorTextLogo: #e9e9e9;
-  --colorButtonTheme: rgb(36, 36, 36);
+  --colorButtonTheme: rgba(18, 18, 18, 0.7);
   --colorBanner0: #1e212b;
   --colorBanner1: #090b11;
   --colorViolet: #a512fb;
   --colorCardBackground: rgba(18, 18, 18, 0.7);
+  --colorCard2Background: rgba(18, 18, 18, 0.7);
+  --colorB1Gradient: rgba(68, 51, 238, 0.32%);
+  --colorB2Gradient: rgba(255, 130, 51, 0.32%);
+  --colorB3Gradient: rgba(255, 51, 85, 0.32%);
 }
