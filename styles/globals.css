@@ -36,9 +36,9 @@ html[data-theme='light'] {
   --colorViolet: #a512fb;
   --colorCardBackground: rgba(255, 255, 255, 0.7);
   --colorCard2Background: rgba(213, 213, 213, 0.7);
-  --colorB1Gradient: rgba(255, 255, 255, 0.32%);
-  --colorB2Gradient: rgba(100, 64, 64, 0.32%);
-  --colorB3Gradient: rgba(164, 161, 255, 0.32%);
+  --colorB1Gradient: rgb(255 255 255 / 32%);
+  --colorB2Gradient: rgb(255 255 255 / 32%);
+  --colorB3Gradient: rgb(164 161 255 / 32%);
 }
 
 html[data-theme='dark'] {
@@ -61,7 +61,7 @@ html[data-theme='dark'] {
   --colorViolet: #a512fb;
   --colorCardBackground: rgba(18, 18, 18, 0.7);
   --colorCard2Background: rgba(18, 18, 18, 0.7);
-  --colorB1Gradient: rgba(68, 51, 238, 0.32%);
-  --colorB2Gradient: rgba(255, 130, 51, 0.32%);
-  --colorB3Gradient: rgba(255, 51, 85, 0.32%);
+  --colorB1Gradient: rgb(68 51 238 / 32%);
+  --colorB2Gradient: rgb(255 130 51 / 32%);
+  --colorB3Gradient: rgb(255 51 85 / 32%);
 }

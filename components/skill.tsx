@@ -15,7 +15,7 @@ export default function Skill() {
             #7c7c7c15 0px,
             #7c7c7c15 3px,
             rgba(255, 255, 255, 0) 3px,
-            rgba(255, 255, 255, 0) 6.5%
+            rgba(255, 255, 255, 0) 5.9%
           );
         }
 
@@ -33,6 +33,18 @@ export default function Skill() {
           margin-top: var(--container_topMargin);
           padding-bottom: calc(var(--container_topMargin) * 1.5);
           */
+        }
+
+        @media (max-width: 654px) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              #7c7c7c15 0px,
+              #7c7c7c15 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 7.04%
+            );
+          }
         }
       `}</style>
     </>

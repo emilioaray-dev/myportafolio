@@ -68,9 +68,9 @@ export default function About() {
           padding: 8% 6%;
           background: var(--colorCard2Background);
           height: fit-content;
-          background-image: radial-gradient(circle at 17% 53%, rgb(68 51 238 / 32%) 0%, transparent 57%),
-            radial-gradient(circle at 90% 53%, rgb(255 130 51 / 32%) 0%, transparent 40%),
-            radial-gradient(circle at 50% 44%, rgb(255 51 85 / 32%) 0%, transparent 74%);
+          background-image: radial-gradient(circle at 17% 53%, var(--colorB1Gradient) 0%, transparent 57%),
+            radial-gradient(circle at 90% 53%, var(--colorB2Gradient) 0%, transparent 40%),
+            radial-gradient(circle at 50% 44%, var(--colorB3Gradient) 0%, transparent 74%);
         }
         .About_h2 {
           font-size: 3rem;
@@ -88,9 +88,9 @@ export default function About() {
 
         @media (max-width: 654px) {
           .About_card {
-            background-image: radial-gradient(circle at 50% 25%, rgb(68 51 238 / 32%) 0%, transparent 57%),
-              radial-gradient(circle at 50% 98%, rgb(255 130 51 / 32%) 0%, transparent 35%),
-              radial-gradient(circle at 50% 53%, rgb(255 51 85 / 32%) 0%, transparent 74%);
+            background-image: radial-gradient(circle at 50% 25%, var(--colorB1Gradient) 0%, transparent 57%),
+              radial-gradient(circle at 50% 98%, var(--colorB2Gradient) 0%, transparent 35%),
+              radial-gradient(circle at 50% 53%, var(--colorB3Gradient) 0%, transparent 74%);
           }
           p {
             font-size: 1rem;
