@@ -159,6 +159,8 @@ export default function Navbar() {
           backdrop-filter: blur(5px);
         }
 
+        .navbar {
+        }
         .navbar__grid {
           display: grid;
           grid-template-columns: max-content auto;
@@ -184,6 +186,7 @@ export default function Navbar() {
           padding: 0.5rem;
           border-radius: var(--borderRadius_buttom);
           backdrop-filter: blur(2px);
+          -webkit-backdrop-filter: blur(2px);
         }
 
         .btn_translate {
@@ -209,6 +212,7 @@ export default function Navbar() {
           min-width: 8.32rem;
           box-shadow: var(--shadowButton);
           backdrop-filter: blur(2px);
+          -webkit-backdrop-filter: blur(2px);
           background: var(--colorButtonTheme);
         }
 

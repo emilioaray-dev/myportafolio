@@ -13,7 +13,12 @@
   "aboutP1": "un desarrollador front-end, amante del mundo de la tecnología y del software. Me esfuerzo por mantener un código reutilizable, mantenible y escalable, clave para crecer cualquier proyecto.",
   "aboutP2": "Me apasiona el desarrollo de software, el aprender nuevas técnicas que aceleren el desarrollo y performance del mismo, así como mantenerme actualizado con nuevos conocimientos y generar siempre una buena retroalimentación en mi entorno de trabajo, para que todos podamos aprender unos de otros.",
   "aboutP3": "Espero que podamos desarrollar juntos, de ser el caso, puedes contactarme a través de mis redes sociales.",
-  "aboutP4": "¡Estoy emocionado de que creemos juntos las aplicaciones del futuro!"
+  "aboutP4": "¡Estoy emocionado de que creemos juntos las aplicaciones del futuro!",
+  "skillsT": "Habilidades",
+  "skillCore": "Habilidades fundamentales",
+  "html5": "(HTML5) Lenguaje de Marcado de hipertexto",
+  "css3": "(CCS3) Hojas de Estilo en Cascada - versión 3",
+  "devTools": "Otras herramientas de desarrollo"
 
 
 

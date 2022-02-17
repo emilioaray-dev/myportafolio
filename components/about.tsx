@@ -54,9 +54,8 @@ export default function About() {
         .container_Margen {
           display: grid;
           align-items: center;
-          /*
           margin-top: var(--container_topMargin);
-          padding-bottom: calc(var(--container_topMargin) * 1.5);
+          /* padding-bottom: calc(var(--container_topMargin) * 1.5);
           */
         }
         .bold {
@@ -94,6 +93,10 @@ export default function About() {
           }
           p {
             font-size: 1rem;
+          }
+
+          .container_Margen {
+            margin-top: calc(var(--container_topMargin) + 2rem);
           }
         }
       `}</style>

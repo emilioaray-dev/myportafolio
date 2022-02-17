@@ -28,9 +28,6 @@ export default function Hero() {
             viewBox="0 0 970 250"
           >
             <g mask='url("#SvgjsMask1024")' fill="none">
-              <filter id="f1" x="0" y="0">
-                <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-              </filter>
               <rect width="970" height="250" x="0" y="0" fill="url(#SvgjsLinearGradient1025)"></rect>
               <path d="M970 0L663.5799999999999 0L970 124.77z" fill="rgba(255, 255, 255, .1)"></path>
               <path
@@ -188,7 +185,7 @@ export default function Hero() {
 
           .hero_imgGred {
             padding: 0.5rem 0rem 4rem;
-            transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg) translate(-4.5rem, -2rem);
+            transform: scale(0.9) skew(-11deg, 0deg) rotateY(-15deg) translate(-2.5rem, -2rem);
             -webkit-box-reflect: unset;
             align-self: center;
           }
