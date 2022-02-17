@@ -159,7 +159,7 @@ export default function Contact() {
         }
 
         .Contact_card {
-          border-radius: 1rem;
+          border-radius: 1rem 1rem 0rem 0rem;
           padding: 4% 6%;
           background: var(--colorCard2Background);
           height: fit-content;
