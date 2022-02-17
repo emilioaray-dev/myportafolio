@@ -15,8 +15,8 @@ export default function About() {
 
   return (
     <>
-      <section id="About" className="container">
-        <div className="max__container container_Margen">
+      <section className="container">
+        <div id="About" className="max__container container_Margen">
           <div className="About_card">
             <h2 className="About_h2">{t('about')}</h2>
             <p>

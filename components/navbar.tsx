@@ -80,19 +80,19 @@ export default function Navbar() {
               </a>
             </Link>
             <ul className="flex__grid">
-              <Link href="/">
-                <a href="/">
-                  <li>{t('saludo')}</li>
+              <Link href="#Home">
+                <a href="#Home">
+                  <li>{t('home')}</li>
                 </a>
               </Link>
-              <Link href="/">
-                <a href="/">
-                  <li>{t('saludo')}</li>
+              <Link href="#About">
+                <a href="#About">
+                  <li>{t('about')}</li>
                 </a>
               </Link>
-              <Link href="/">
-                <a href="/">
-                  <li>{t('saludo')}</li>
+              <Link href="#Skill">
+                <a href="#Skill">
+                  <li>{t('skillsT')}</li>
                 </a>
               </Link>
 
@@ -233,9 +233,9 @@ export default function Navbar() {
           flex-direction: row;
         }
 
-        @media (max-width: 654px) {
+        @media (max-width: 794px) {
           h2 {
-            font-size: max(1.5rem, 6vw);
+            font-size: max(1.5rem, 3vw);
           }
 
           .navbar__img {

@@ -17,7 +17,7 @@ export default function Hero() {
 
   return (
     <>
-      <section id="Hero" className="container">
+      <section id="Home" className="container">
         <div className="banner_background">
           <svg
             xmlns="http://www.w3.org/2000/svg"

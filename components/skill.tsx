@@ -5,8 +5,8 @@ export default function Skill() {
 
   return (
     <>
-      <section id="Skill" className="container">
-        <div className="max__container container_Margen">
+      <section className="container">
+        <div id="Skill" className="max__container container_Margen">
           <div className="Skill_card">
             <h2 className="Skill_h2">{t('skillsT')}</h2>
 
