@@ -95,6 +95,16 @@ export default function Navbar() {
                   <li>{t('skillsT')}</li>
                 </a>
               </Link>
+              <Link href="#Projects">
+                <a href="#Projects">
+                  <li>{t('projectsT')}</li>
+                </a>
+              </Link>
+              <Link href="#Contact">
+                <a href="#Contact">
+                  <li>{t('contactT')}</li>
+                </a>
+              </Link>
 
               <button
                 className="btn_themeMode"
@@ -233,9 +243,9 @@ export default function Navbar() {
           flex-direction: row;
         }
 
-        @media (max-width: 794px) {
+        @media (max-width: 984px) {
           h2 {
-            font-size: max(1.5rem, 3vw);
+            font-size: max(1.5rem, 10%);
           }
 
           .navbar__img {
@@ -252,7 +262,7 @@ export default function Navbar() {
           }
 
           .flex__grid {
-            justify-content: center;
+            justify-content: end;
             width: 100%;
           }
 

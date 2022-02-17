@@ -174,11 +174,11 @@ export default function Skill() {
           overflow: hidden;
           min-height: calc(100vh + var(--container_topMargin));
           background: repeating-linear-gradient(
-            120deg,
+            135deg,
             #7c7c7c15 0px,
             #7c7c7c15 3px,
             rgba(255, 255, 255, 0) 3px,
-            rgba(255, 255, 255, 0) 5.9%
+            rgba(255, 255, 255, 0) 6%
           );
         }
 
@@ -269,6 +269,7 @@ export default function Skill() {
         }
 
         @media (max-width: 834px) {
+          /*
           .container {
             background: repeating-linear-gradient(
               120deg,
@@ -278,6 +279,7 @@ export default function Skill() {
               rgba(255, 255, 255, 0) 7.04%
             );
           }
+          */
           .Skill_card {
             background-image:
               radial-gradient(circle at 50% 25%, var(--colorB3Gradient) 0%, transparent 74%),

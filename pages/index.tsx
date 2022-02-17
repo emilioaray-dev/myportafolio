@@ -7,6 +7,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
 import About from '../components/about'
 import Skill from '../components/skill'
+import Projects from '../components/projects'
+import Contact from '../components/contact'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Skill />
+        <Projects />
+        <Contact />
       </main>
     </>
   )

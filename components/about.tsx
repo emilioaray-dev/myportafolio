@@ -16,8 +16,8 @@ export default function About() {
   return (
     <>
       <section className="container">
-        <div id="About" className="max__container container_Margen">
-          <div className="About_card">
+        <div id="About" className="max__container container_Margen ">
+          <div className=" About_card">
             <h2 className="About_h2">{t('about')}</h2>
             <p>
               {t('hi')} <span className="bold">{t('name')}</span>, {t('aboutP1')}
@@ -40,7 +40,7 @@ export default function About() {
             #7c7c7c15 0px,
             #7c7c7c15 3px,
             rgba(255, 255, 255, 0) 3px,
-            rgba(255, 255, 255, 0) 5%
+            rgba(255, 255, 255, 0) 6%
           );
         }
 
@@ -49,7 +49,8 @@ export default function About() {
           margin: 0 auto;
           width: 100%;
           max-width: var(--max-widthContainer);
-          padding: 0 1rem;
+
+          padding: 1rem;
         }
         .container_Margen {
           display: grid;
@@ -67,6 +68,7 @@ export default function About() {
           padding: 8% 6%;
           background: var(--colorCard2Background);
           height: fit-content;
+          margin-top: var(--container_topMargin);
           background-image: radial-gradient(circle at 17% 53%, var(--colorB1Gradient) 0%, transparent 57%),
             radial-gradient(circle at 90% 53%, var(--colorB2Gradient) 0%, transparent 40%),
             radial-gradient(circle at 50% 44%, var(--colorB3Gradient) 0%, transparent 74%);
@@ -86,6 +88,16 @@ export default function About() {
         }
 
         @media (max-width: 834px) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              #7c7c7c15 0px,
+              #7c7c7c15 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 6.65%
+            );
+          }
+
           .About_card {
             background-image: radial-gradient(circle at 50% 25%, var(--colorB1Gradient) 0%, transparent 57%),
               radial-gradient(circle at 50% 98%, var(--colorB2Gradient) 0%, transparent 35%),
