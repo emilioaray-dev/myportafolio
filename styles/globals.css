@@ -41,6 +41,9 @@ html[data-theme='light'] {
   --colorB2Gradient: rgb(255 255 255 / 32%);
   --colorB3Gradient: rgb(164 161 255 / 32%);
   --backgroundSubCard: linear-gradient(145deg, transparent 0%, rgba(120, 120, 120, 1) 50%, transparent 100%), linear-gradient(35deg, transparent 0%, rgba(120, 120, 120, 1) 50%, transparent 100%);
+  --backgroundSubCardPar: linear-gradient( 40deg, rgb(190, 190, 190) 0%, rgba(120, 120, 120, 1) 50%, rgb(190, 190, 190) 100%);
+  --backgroundSubCardInpar: linear-gradient( -40deg, rgb(190, 190, 190) 0%, rgba(120, 120, 120, 1) 50%, rgb(190, 190, 190) 100%);
+  --colorGithub: #161b22;
 }
 
 html[data-theme='dark'] {
@@ -67,4 +70,7 @@ html[data-theme='dark'] {
   --colorB2Gradient: rgb(255 130 51 / 32%);
   --colorB3Gradient: rgb(255 51 85 / 32%);
   --backgroundSubCard: rgb(0 0 0 / 0.2);
+  --backgroundSubCardPar: rgb(0 0 0 / 0.2);
+  --backgroundSubCardInpar: rgb(0 0 0 / 0.2);
+  --colorGithub: #aeb5bb;
 }

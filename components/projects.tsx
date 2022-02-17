@@ -73,6 +73,8 @@ export default function Projects() {
             radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%) ,
             radial-gradient(circle at 60% 23%, var(--colorB1Gradient) 0%, transparent 120%);
         }
+
+       
         .Project_h2 {
           font-size: 3rem;
           font-weight: 300;
@@ -101,9 +103,17 @@ export default function Projects() {
           border-radius: 1rem;
           padding: 8% 6%;
           min-height: 17rem;
-          background: var(--backgroundSubCard);
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+          /* background: var(--backgroundSubCard); */
+        }
+
+         .Project_subCard:nth-child(2n) {
+          background: var(--backgroundSubCardPar);
+        }
+
+        .Project_subCard:nth-child(2n+1) {
+          background: var(--backgroundSubCardInpar);
         }
 
         .pictureGrid {
