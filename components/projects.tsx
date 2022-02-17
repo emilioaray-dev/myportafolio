@@ -1,10 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { Carousel } from 'react-responsive-carousel'
 export default function Projects() {
   const { t } = useTranslation('common')
-
   return (
     <>
       <section className="container">
@@ -14,73 +11,78 @@ export default function Projects() {
               <h2 className="Project_h2">{t('projectsT')}</h2>
 
               <div className="Project_subCardGrid">
-                <Carousel
-                  centerMode={false}
-                  swipeable={true}
-                  emulateTouch={true}
-                  infiniteLoop={false}
-                  showIndicators={false}
-                  showStatus={true}
-                >
-                  <div className="Project_subCard">
-                    <h3>P1</h3>
+                <div className="swipe-container">
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>P1</h3>
+                    </div>
                   </div>
 
-                  <div className="Project_subCard">
-                    <h3>P2</h3>
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>P2</h3>
+                    </div>
+                  </div>
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/www.ifswitch.com.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={765}
+                          layout="responsive"
+                        />
+                      </picture>
+                    </div>
                   </div>
 
-                  <div className="Project_subCard">
-                    <h3>Ifswitch</h3>
-
-                    <Image
-                      src="/assets/img/projects/www.ifswitch.com.webp"
-                      alt="Webpage ifswitch.com"
-                      width={375}
-                      height={765}
-                      layout="responsive"
-                    />
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/www.ifswitch.com.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={765}
+                          layout="responsive"
+                        />
+                      </picture>
+                    </div>
                   </div>
 
-                  <div className="Project_subCard">
-                    <h3>Ifswitch</h3>
-                    <picture>
-                      <Image
-                        src="/assets/img/projects/www.ifswitch.com.webp"
-                        alt="Webpage ifswitch.com"
-                        width={375}
-                        height={765}
-                        layout="responsive"
-                      />
-                    </picture>
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/www.ifswitch.com.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={765}
+                          layout="responsive"
+                        />
+                      </picture>
+                    </div>
                   </div>
 
-                  <div className="Project_subCard">
-                    <h3>Ifswitch</h3>
-                    <picture>
-                      <Image
-                        src="/assets/img/projects/www.ifswitch.com.webp"
-                        alt="Webpage ifswitch.com"
-                        width={375}
-                        height={765}
-                        layout="responsive"
-                      />
-                    </picture>
+                  <div className="swipe-element">
+                    <div className="Project_subCard">
+                      <h3>Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/www.ifswitch.com.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={765}
+                          layout="responsive"
+                        />
+                      </picture>
+                    </div>
                   </div>
-
-                  <div className="Project_subCard">
-                    <h3>Ifswitch</h3>
-                    <picture>
-                      <Image
-                        src="/assets/img/projects/www.ifswitch.com.webp"
-                        alt="Webpage ifswitch.com"
-                        width={375}
-                        height={765}
-                        layout="responsive"
-                      />
-                    </picture>
-                  </div>
-                </Carousel>
+                </div>
               </div>
             </div>
           </div>
@@ -92,47 +94,15 @@ export default function Projects() {
           overflow: auto;
           overflow-x: scroll;
           scroll-snap-type: x mandatory;
+          touch-action: auto;
         }
         /* scrollbar should be hidden */
         .swipe-container::-webkit-scrollbar {
-          display: none;
         }
         /* main element should always snap into view */
         .swipe-element {
           scroll-snap-align: start;
-          font-family: sans-serif;
-          padding: 16px;
-          background-color: whitesmoke;
-        }
-        .carousel-root {
-          display: grid;
-          outline: none;
-        }
-        .carousel .slider-wrapper.axis-horizontal .slider .slide {
-          /*
-          min-width: fit-content !important;
-          */
-        }
-        .carousel .control-arrow,
-        .carousel.carousel-slider .control-arrow {
-          opacity: 1;
-          margin-right: -3px;
-          -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-          background: #5479ff61;
-          width: 2.5rem;
-        }
-
-        button[aria-label='previous slide / item'] {
-          border-radius: 0px 15px 15px 0px;
-        }
-
-        .slider-wrapper,
-        button[aria-label='next slide / item'] {
-          border-radius: 15px 0px 0px 15px;
-        }
-        .carousel .carousel-status {
-          z-index: 2;
+          margin-bottom: 2rem;
         }
       `}</style>
       <style jsx>{`
@@ -167,7 +137,6 @@ export default function Projects() {
           border-radius: 1rem;
           padding: 4% 0%;
           background: var(--colorCard2Background);
-          /* max-width: var(--max-widthContainer); */
           height: fit-content;
           background-image:
             radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%) ,
@@ -193,11 +162,7 @@ export default function Projects() {
           user-select: none;
         }
         .Project_subCardGrid {
-        /* 
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-          gap: 1rem;
-        */
+        display: grid;
         }
 
         .Project_subCard {
