@@ -138,7 +138,7 @@ export default function Skill() {
                       height="auto"
                       alt="nodeJS"
                       title="nodeJS"
-                      style={{ marginTop: '1rem' }}
+                      style={{ marginTop: '1rem', transform: 'translateY(5px)' }}
                     />
                   </picture>
                   <picture>
