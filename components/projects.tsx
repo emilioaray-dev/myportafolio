@@ -16,11 +16,15 @@ export default function Projects() {
                     <div className="Project_subCard">
                       <h3>P1</h3>
                     </div>
+                    <picture></picture>
+                    <div className="picture_content">Hola</div>
                   </div>
 
                   <div className="swipe-element">
                     <div className="Project_subCard">
                       <h3>P2</h3>
+                      <picture></picture>
+                      <div className="picture_content">Hola</div>
                     </div>
                   </div>
                   <div className="swipe-element">
@@ -34,54 +38,23 @@ export default function Projects() {
                           height={765}
                           layout="responsive"
                         />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div>Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </picture>
                     </div>
                   </div>
-
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/www.ifswitch.com.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={765}
-                          layout="responsive"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/www.ifswitch.com.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={765}
-                          layout="responsive"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/www.ifswitch.com.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={765}
-                          layout="responsive"
-                        />
-                      </picture>
-                    </div>
-                  </div>
+                  {/* */}
                 </div>
               </div>
             </div>
@@ -163,6 +136,49 @@ export default function Projects() {
         }
         .Project_subCardGrid {
         display: grid;
+        }
+        .picture_content {
+          background: #000000ab;
+          position: absolute;
+          z-index: 1;
+          width: 87%;
+          height: 0;
+          top: 0;
+          border-radius: 1rem;
+          margin: 4.3rem 0rem 0rem 0rem;
+          padding: 0.5rem;
+          backdrop-filter: blur(3px);
+          opacity: 0;
+          transition: 0.4s;
+          color: var(--colorWhite);
+        }
+        picture:hover > .picture_content {
+          display: block;
+          width: 87%;
+          height: 82.5%;
+          opacity: 1;
+        }
+
+        button {
+          color: var(--colorTextHeader);
+          border-radius: var(--borderRadius_buttom);
+          padding: 0.2rem 1rem;
+          border: none;
+          min-width: 5rem;
+          background: var(--colorButtonBlack);
+          cursor: pointer;
+        }
+
+        .picture_contentGrid {
+          display: grid;
+          grid-template-columns: auto ;
+          grid-template-rows: 90% min-content;
+          height: 100%;
+        }
+
+        .picture_contentGrid-bottom {
+          display: flex;
+          justify-content: space-around;
         }
 
         .Project_subCard {

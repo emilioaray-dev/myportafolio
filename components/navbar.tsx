@@ -212,6 +212,7 @@ export default function Navbar() {
           border: none;
           user-select: none;
           box-shadow: var(--shadowButton);
+          cursor: pointer;
         }
 
         .btn_translate-span {
@@ -235,6 +236,7 @@ export default function Navbar() {
           color: var(--colorTextHeader);
           border-radius: var(--borderRadius_buttom);
           padding: 0.1rem;
+          cursor: pointer;
         }
 
         .navbar__logo {
