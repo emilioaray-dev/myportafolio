@@ -1,46 +1,65 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
+// Import Swiper React components
+import { Virtual } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/virtual'
+
 export default function Projects() {
   const { t } = useTranslation('common')
+
+  // Create array with 1000 slides
+  const slides = Array.from({ length: 1000 }).map((el, index) => `Slide ${index + 1}`)
+
   return (
     <>
       <section className="container">
         <div id="Projects" className="max__container ">
           <div className="container_Margen">
-            <div className="Project_card">
-              <h2 className="Project_h2">{t('projectsT')}</h2>
+            <div className="cardsProject_grid">
+              <div className="Project_card">
+                <h2 className="Project_card-title">{t('projectsT')}</h2>
 
-              <div className="Project_subCardGrid">
-                <div className="swipe-container">
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>P1</h3>
-                    </div>
-                    <picture></picture>
-                    <div className="picture_content">Hola</div>
-                  </div>
-
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>P2</h3>
-                      <picture></picture>
-                      <div className="picture_content">Hola</div>
-                    </div>
-                  </div>
-                  <div className="swipe-element">
-                    <div className="Project_subCard">
-                      <h3>Ifswitch</h3>
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={1}
+                  breakpoints={{
+                    320: {
+                      slidesPerView: 1.3,
+                    },
+                    640: {
+                      slidesPerView: 2.5,
+                    },
+                    768: {
+                      slidesPerView: 3.5,
+                    },
+                    1024: {
+                      slidesPerView: 4.5,
+                    },
+                    1280: {
+                      slidesPerView: 5.5,
+                    },
+                    1440: {
+                      slidesPerView: 3.5,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
                       <picture>
                         <Image
-                          src="/assets/img/projects/www.ifswitch.com.webp"
+                          src="/assets/img/projects/ifswitchre.webp"
                           alt="Webpage ifswitch.com"
                           width={375}
-                          height={765}
+                          height={667}
                           layout="responsive"
                         />
                         <div className="picture_content">
                           <div className="picture_contentGrid">
-                            <div>Hola</div>
+                            <div className="picture_grid-text">Hola</div>
                             <div className="picture_contentGrid-bottom">
                               <a href="">
                                 <button>Live</button>
@@ -53,31 +72,259 @@ export default function Projects() {
                         </div>
                       </picture>
                     </div>
-                  </div>
-                  {/* */}
-                </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+                      <picture>
+                        <Image
+                          src="/assets/img/projects/ifswitchre.webp"
+                          alt="Webpage ifswitch.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                        <div className="picture_content">
+                          <div className="picture_contentGrid">
+                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_contentGrid-bottom">
+                              <a href="">
+                                <button>Live</button>
+                              </a>
+                              <a href="">
+                                <button>Git</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
+              {/* */}
             </div>
           </div>
         </div>
       </section>
-      <style jsx global>{`
-        .swipe-container {
-          display: flex;
-          overflow: auto;
-          overflow-x: scroll;
-          scroll-snap-type: x mandatory;
-          touch-action: auto;
-        }
-        /* scrollbar should be hidden */
-        .swipe-container::-webkit-scrollbar {
-        }
-        /* main element should always snap into view */
-        .swipe-element {
-          scroll-snap-align: start;
-          margin-bottom: 2rem;
-        }
-      `}</style>
+      <style jsx global>{``}</style>
       <style jsx>{`
         .container {
           display: grid;
@@ -92,30 +339,28 @@ export default function Projects() {
             rgba(255, 255, 255, 0) 6%
           );
         }
-
         .max__container {
           display: grid;
           margin: 0 auto;
           width: 100%;
-          max-width: var(--max-widthContainer);
-          padding: 1rem;
+          max-width: var(--max-widthContainer); 
+          align-items: center;
         }
         .container_Margen {
-          display: grid;
-          align-items: center;
+
+          width: 100%;
           max-width: var(--max-widthContainer);
         }
-
         .Project_card {
           border-radius: 1rem;
-          padding: 4% 0%;
+          padding: 2rem 0rem;
           background: var(--colorCard2Background);
-          height: fit-content;
+          max-height: 100vh;
           background-image:
             radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%) ,
             radial-gradient(circle at 60% 23%, var(--colorB1Gradient) 0%, transparent 120%);
         }
-        .Project_h2 {
+        .Project_card-title {
           font-size: 3rem;
           font-weight: 300;
           line-height: 1.1;
@@ -124,51 +369,87 @@ export default function Projects() {
           font-weight: 600;
           font-family: 'Grechen Fuemen', cursive;
         }
+        /* End Card and Card Title */
 
-        h3 {
+        /* Start SubCard Projects */
+
+        .cardsProject_grid {
+          display: block;
+          width: 100vw;
+          max-width: var(--max-widthContainer);
+          padding: 0 1rem;
+        }
+        .Project_cardsProjects {
+          display: grid;
+          border-radius: 1rem;
+          padding: 1rem 1rem;
+          min-height: 23rem;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          margin: 0 0.2rem;
+          justify-items: center;
+          max-width: 100%;
+        }
+        .Project_cardsProjects:nth-child(2n) {
+          background: var(--backgroundSubCardPar);
+        }
+        .Project_cardsProjects:nth-child(2n+1) {
+          background: var(--backgroundSubCardInpar);
+        }
+        .Project_cardsProjects-title {
           font-family: Roboto, sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
           font-stretch: condensed;
           font-weight: 600;
           text-align: center;
-          min-height: 3rem;
+          min-height: 2.5rem;
           color: var(--colorWhite);
           user-select: none;
         }
-        .Project_subCardGrid {
-        display: grid;
-        }
-        .picture_content {
-          background: #000000ab;
-          position: absolute;
-          z-index: 1;
-          width: 87%;
-          height: 0;
-          top: 0;
+        picture {
+          display: block;
+          width: 100%;
+          height: 95%;
+          user-select: none;
           border-radius: 1rem;
-          margin: 4.3rem 0rem 0rem 0rem;
-          padding: 0.5rem;
+          overflow: hidden;
+          margin-bottom: -4rem;
+        }
+        /* Start Pictore hover Description 000000ab */
+        .picture_content {
+          display: grid;
+          transform: translateY(-100%);
+          background: #000000ab;
+          width: 100%;
+          height: 0%;
+          border-radius: 1rem;
+          -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
           opacity: 0;
           transition: 0.4s;
           color: var(--colorWhite);
+          /*
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          margin: 3.5rem 0rem 0rem 0rem;
+          padding: 0.5rem;
+          max-width: 13rem;*/
         }
         picture:hover > .picture_content {
           display: block;
-          width: 87%;
-          height: 82.5%;
+          width: 100%;
+          height: 100%;
           opacity: 1;
         }
-
         button {
           color: var(--colorTextHeader);
           border-radius: var(--borderRadius_buttom);
           padding: 0.2rem 1rem;
           border: none;
-          min-width: 5rem;
+          /* min-width: 5rem; */
           background: var(--colorButtonBlack);
           cursor: pointer;
         }
-
         .picture_contentGrid {
           display: grid;
           grid-template-columns: auto ;
@@ -176,41 +457,13 @@ export default function Projects() {
           height: 100%;
         }
 
+        .picture_grid-text {
+          padding: 1rem;
+        }
         .picture_contentGrid-bottom {
           display: flex;
           justify-content: space-around;
         }
-
-        .Project_subCard {
-          border-radius: 1rem;
-          padding: 8% 6%;
-          height: 100%;
-          -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-          margin: 0 0.5rem; 
-          width: 15rem;
-          margin-left: 1.4rem;
-        }
-
-         .Project_subCard:nth-child(2n) {
-          background: var(--backgroundSubCardPar);
-        }
-
-        .Project_subCard:nth-child(2n+1) {
-          background: var(--backgroundSubCardInpar);
-        }
-
-
-       picture {
-          display: block;
-          width: 100%;
-          user-select: none;
-          border-radius: 1rem;
-          overflow: hidden;
-        }
-
-
-
         @media (max-width: 834px) {
           .Project_card {
             background-image:

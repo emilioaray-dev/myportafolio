@@ -65,6 +65,20 @@ export default function Navbar() {
   //console.log(language)
   // console.log(hoTheme)
 
+  // Funcion Hide Navabar
+  /*
+  var prevScrollpos = window.pageYOffset
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById('Navbar').style.top = '0'
+    } else {
+      document.getElementById('Navbar').style.top = '-72px'
+    }
+    prevScrollpos = currentScrollPos
+  }
+*/
+
   return (
     <>
       <section id="Navbar" className="container">
@@ -160,13 +174,13 @@ export default function Navbar() {
         }
         #Navbar {
           position: fixed;
-          z-index: 1;
+          z-index: 2;
           box-shadow: 0rem -1.7rem 2rem 1rem var(--colorShadow);
           background: var(--gradientNav);
-          height: auto;
           padding: 1rem 0rem;
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+          transition: top 0.3s;
         }
 
         .navbar {

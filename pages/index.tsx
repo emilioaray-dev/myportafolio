@@ -9,6 +9,7 @@ import About from '../components/about'
 import Skill from '../components/skill'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
+import Scroll from '../components/useScroll'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <meta name="color-scheme" content="dark light"></meta>
       </Head>
       <main>
+        <Scroll />
         <Navbar />
         <Hero />
         <About />
