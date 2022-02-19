@@ -5,6 +5,7 @@ import { IconContext } from 'react-icons'
 import { HiSun, HiMoon } from 'react-icons/hi'
 import { useTranslation, i18n } from 'next-i18next'
 import { useRouter } from 'next/router'
+import useScrollListener from './scroll'
 
 export default function Navbar() {
   // Set Default Language
@@ -49,14 +50,7 @@ export default function Navbar() {
     strintheme = JSON.parse('true')
   }
 
-  /*
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
-  if (!mounted) return null
-*/
-
   // Set State tue and false for buttom Theme Mode
-
   const [state, setState] = useState(strintheme)
 
   const { resolvedTheme } = useTheme()
@@ -66,22 +60,20 @@ export default function Navbar() {
   // console.log(hoTheme)
 
   // Funcion Hide Navabar
-  /*
-  var prevScrollpos = window.pageYOffset
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById('Navbar').style.top = '0'
-    } else {
-      document.getElementById('Navbar').style.top = '-72px'
-    }
-    prevScrollpos = currentScrollPos
-  }
-*/
+  const [navClassList, setNavClassList] = useState([])
+  const scroll = useScrollListener()
+  // update classList of nav on scroll
+  useEffect(() => {
+    const _classList = []
+
+    if (scroll.y > 150 && scroll.y - scroll.lastY > 0) _classList.push('--hidden')
+
+    setNavClassList(_classList)
+  }, [scroll.y, scroll.lastY])
 
   return (
     <>
-      <section id="Navbar" className="container">
+      <section id="Navbar" className={`container ${navClassList.join('')}`}>
         <nav className="navbar">
           <div className="max__container navbar__grid">
             <Link href="/">
@@ -181,10 +173,13 @@ export default function Navbar() {
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
           transition: top 0.3s;
+          top: 0;
         }
 
-        .navbar {
+        #Navbar.--hidden {
+          transform: translateY(-100%);
         }
+
         .navbar__grid {
           display: grid;
           grid-template-columns: max-content auto;
