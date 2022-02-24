@@ -31,10 +31,7 @@ const Home: NextPage = () => {
           property="og:description"
           content="Soy frontend Developer, entusiasta del mundo del desarrollo, y les presento parte de mi portafolio y habilidades."
         />
-        <meta
-          property="og:image"
-          content="https://www.celsiusaray.dev/assets/img/projects/celsius-aray-social-share.jpg"
-        />
+        <meta property="og:image" content="/assets/img/projects/celsius-aray-social-share.jpg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
         <meta name="color-scheme" content="dark light"></meta>
