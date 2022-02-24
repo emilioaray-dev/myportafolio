@@ -44,6 +44,19 @@ const Home: NextPage = () => {
         <meta property="og:image:width" content="375" />
         <meta property="og:image:height" content="211" />
         <meta property="og:image:alt" content="Celsius Aray Social Share" />
+
+        <meta
+          property="og:image"
+          content="https://www.celsiusaray.dev/assets/img/projects/celsius-aray-social-share-1920x1080.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.celsiusaray.dev/assets/img/projects/celsius-aray-social-share-1920x1080.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:alt" content="Celsius Aray Social Share" />
         <meta name="color-scheme" content="dark light"></meta>
       </Head>
       <main>
