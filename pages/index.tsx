@@ -26,7 +26,6 @@ const Home: NextPage = () => {
           property="og:url"
           content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"
         />
-
         <meta property="og:title" content="Celsius E Aray Portafolio" />
         <meta
           property="og:description"
@@ -36,6 +35,8 @@ const Home: NextPage = () => {
           property="og:image"
           content="https://www.celsiusaray.dev/assets/img/projects/celsius-aray-social-share.jpg"
         />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
         <meta name="color-scheme" content="dark light"></meta>
       </Head>
       <main>
