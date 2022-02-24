@@ -49,7 +49,7 @@ export default function Projects() {
                   <SwiperSlide>
                     <div className="Project_cardsProjects">
                       <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
+                      <picture className="Picture_Ifswitch">
                         <Image
                           src="/assets/img/projects/ifswitchre.webp"
                           alt="Webpage ifswitch.com"
@@ -59,13 +59,27 @@ export default function Projects() {
                         />
                         <div className="picture_content">
                           <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_grid-text">
+                              <strong>Ifswitch</strong>. Es un Proyecto de IOT donde he creado tanto la pagina web, asi
+                              como el Hardware de IOT, programación y desarrollo.
+                              <p>
+                                Esta diseñado para detectar presencia de agua en la red para encender y apagar
+                                automáticamente una bomba y monitorear niveles de tanque o tinaco, compatible con MQTT y
+                                HomeAssistant.
+                              </p>
+                            </div>
                             <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
+                              <a href="https://www.ifswitch.com/" target="_blank" rel="noopener noreferrer">
+                                <button>Web</button>
                               </a>
-                              <a href="">
-                                <button>Git</button>
+                              <a
+                                href="https://github.com/emilioaray-dev/ifswitch.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <button>
+                                  <h4>Git</h4>
+                                </button>
                               </a>
                             </div>
                           </div>
@@ -76,24 +90,38 @@ export default function Projects() {
 
                   <SwiperSlide>
                     <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
+                      <h3 className="Project_cardsProjects-title">VuestroMenu</h3>
+                      <picture className="Picture_vuestromenu">
                         <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
+                          src="/assets/img/projects/vuestromenu_375x667.webp"
+                          alt="Webpage vuestromenu.com"
                           width={375}
                           height={667}
                           layout="responsive"
                         />
                         <div className="picture_content">
                           <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_grid-text">
+                              <strong>Vuestromenu,</strong> es el desarrollo de una PWA de menu digitales para
+                              restaurantes, siendo estos autoadministrable, creado con NEXTjs con (ISR) Incremental
+                              Static Regeneration, usando como cms notion.so.
+                              <p>
+                                Otorgándole la versatilidad al cliente de que pueda hacer CRUD en vivo de sus platos con
+                                la velocidad de una pagina estática.
+                              </p>
+                            </div>
                             <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
+                              <a href="https://www.vuestromenu.com/" target="_blank" rel="noopener noreferrer">
+                                <button>Web</button>
                               </a>
-                              <a href="">
-                                <button>Git</button>
+                              <a
+                                href="https://github.com/emilioaray-dev/apivuestromenu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <button>
+                                  <h4>Git</h4>
+                                </button>
                               </a>
                             </div>
                           </div>
@@ -101,26 +129,43 @@ export default function Projects() {
                       </picture>
                     </div>
                   </SwiperSlide>
+
                   <SwiperSlide>
                     <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
+                      <h3 className="Project_cardsProjects-title">Don Remolo</h3>
+                      <picture className="Picture_donRemolo">
                         <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
+                          src="/assets/img/projects/donRemolo_375x667.webp"
+                          alt="Webpage DonRemolo"
                           width={375}
                           height={667}
                           layout="responsive"
                         />
                         <div className="picture_content">
                           <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
+                            <div className="picture_grid-text">
+                              <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso
+                              una Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas,
+                              donde el reto personal, el cual ha sido logrado es el de crear un portal con router
+                              dinamico que se auto regenera como paginas estáticas una vez realizado el fetch usando
+                              NEXTjs para dicho feature.
+                              <p>
+                                Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
+                                performance.
+                              </p>
+                            </div>
                             <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
+                              <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <button>Web</button>
                               </a>
-                              <a href="">
-                                <button>Git</button>
+                              <a
+                                href="https://github.com/emilioaray-dev/donremolo-next"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <button>
+                                  <h4>Git</h4>
+                                </button>
                               </a>
                             </div>
                           </div>
@@ -128,188 +173,38 @@ export default function Projects() {
                       </picture>
                     </div>
                   </SwiperSlide>
+
                   <SwiperSlide>
                     <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
+                      <h3 className="Project_cardsProjects-title">movil5</h3>
+                      <picture className="Picture_movil5">
                         <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
+                          src="/assets/img/projects/movil5_375x667.webp"
+                          alt="Webpage movil5.com"
                           width={375}
                           height={667}
                           layout="responsive"
                         />
                         <div className="picture_content">
                           <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
+                            <div className="picture_grid-text">
+                              <strong>movil5.</strong> Es la pagina web creada por mi persona de la empresa movil5
+                              Panama, donde he podido colaborar con ellos remotamente como front developer por mas de 5
+                              años.
+                              <p>Dicho desarrollo fue generado con Gatsby.</p>
                             </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
                             <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
+                              <a href="https://www.movil5.com/es/" target="_blank" rel="noopener noreferrer">
+                                <button>Web</button>
                               </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </picture>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Ifswitch</h3>
-                      <picture>
-                        <Image
-                          src="/assets/img/projects/ifswitchre.webp"
-                          alt="Webpage ifswitch.com"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">Hola</div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="">
-                                <button>Live</button>
-                              </a>
-                              <a href="">
-                                <button>Git</button>
+                              <a
+                                href="https://github.com/emilioaray-dev/movil5.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <button>
+                                  <h4>Git</h4>
+                                </button>
                               </a>
                             </div>
                           </div>
@@ -384,6 +279,7 @@ export default function Projects() {
           border-radius: 1rem;
           padding: 1rem 1rem;
           min-height: 23rem;
+          max-height: 600px;
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
           margin: 0 0.2rem;
@@ -410,10 +306,30 @@ export default function Projects() {
           width: 100%;
           height: 95%;
           user-select: none;
-          border-radius: 1rem;
+          border-radius: 1.2rem;
           overflow: hidden;
           margin-bottom: -4rem;
         }
+
+        .Picture_Ifswitch {
+          height: 67.5%;
+        }
+        p {
+          margin-top: 1rem;
+        }
+
+        .Picture_vuestromenu {
+          height: 65%;
+        }
+
+        .Picture_donRemolo {
+          height: 59.99%;
+        }
+
+        .Picture_movil5  {
+           height: 74.4%;
+        }
+
         /* Start Pictore hover Description 000000ab */
         .picture_content {
           display: grid;
@@ -449,6 +365,12 @@ export default function Projects() {
           /* min-width: 5rem; */
           background: var(--colorButtonBlack);
           cursor: pointer;
+          
+        }
+        h4 {
+           background: linear-gradient(230deg, rgb(68 51 238), rgb(255 51 85));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .picture_contentGrid {
           display: grid;
@@ -459,6 +381,7 @@ export default function Projects() {
 
         .picture_grid-text {
           padding: 1rem;
+          height: 100%;
         }
         .picture_contentGrid-bottom {
           display: flex;
