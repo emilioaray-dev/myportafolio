@@ -16,6 +16,7 @@ export default function Navbar() {
   const handleClick = () => {
     language == 'es' ? setLanguage('en') : setLanguage('es')
     i18n.changeLanguage(language)
+    console.log(router)
   }
 
   // Set UseTranslation
@@ -136,11 +137,11 @@ export default function Navbar() {
               </button>
               <button className="btn_translate" onClick={handleClick}>
                 {i18n.language == 'es' ? (
-                  <a onClick={() => [setLanguage('en'), router.push('/en')]} className="btn_translate-span">
+                  <a onClick={() => [setLanguage('en'), router.push('/en', '/en')]} className="btn_translate-span">
                     ES
                   </a>
                 ) : (
-                  <a onClick={() => [setLanguage('es'), router.push('/es')]} className="btn_translate-span">
+                  <a onClick={() => [setLanguage('es'), router.push('/es', '/es')]} className="btn_translate-span">
                     EN
                   </a>
                 )}

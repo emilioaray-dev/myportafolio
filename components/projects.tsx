@@ -27,7 +27,7 @@ export default function Projects() {
                   spaceBetween={1}
                   breakpoints={{
                     320: {
-                      slidesPerView: 1.3,
+                      slidesPerView: 1.2,
                     },
                     640: {
                       slidesPerView: 2.5,
@@ -400,6 +400,23 @@ export default function Projects() {
           .container_Margen {
 
           }
+            .Picture_Ifswitch {
+          height: 58.5%;
+        }
+
+
+        .Picture_vuestromenu {
+          height: 57%;
+        }
+
+        .Picture_donRemolo {
+          height: 56.5%;
+          font-size: 14px;
+        }
+
+        .Picture_movil5  {
+           height: 65.6%;
+        }
         }
         @media (min-width: 834px) and (max-width: 1280px) {
           .container {
