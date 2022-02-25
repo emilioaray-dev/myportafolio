@@ -20,8 +20,9 @@ export default function Projects() {
           <div className="container_Margen">
             <div className="cardsProject_grid">
               <div className="Project_card">
-                <h2 className="Project_card-title">{t('projectsT')}</h2>
-
+                <div className="Project_card-Divtitle">
+                  <h2 className="Project_card-title">{t('projectsT')}</h2>
+                </div>
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={1}
@@ -132,45 +133,49 @@ export default function Projects() {
 
                   <SwiperSlide>
                     <div className="Project_cardsProjects">
-                      <h3 className="Project_cardsProjects-title">Don Remolo</h3>
-                      <picture className="Picture_donRemolo">
-                        <Image
-                          src="/assets/img/projects/donRemolo_375x667.webp"
-                          alt="Webpage DonRemolo"
-                          width={375}
-                          height={667}
-                          layout="responsive"
-                        />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">
-                              <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso
-                              una Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas,
-                              donde el reto personal, el cual ha sido logrado es el de crear un portal con router
-                              dinamico que se auto regenera como paginas estáticas una vez realizado el fetch usando
-                              NEXTjs para dicho feature.
-                              <p>
-                                Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
-                                performance.
-                              </p>
-                            </div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Web</button>
-                              </a>
-                              <a
-                                href="https://github.com/emilioaray-dev/donremolo-next"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <button>
-                                  <h4>Git</h4>
-                                </button>
-                              </a>
+                      <div>
+                        <h3 className="Project_cardsProjects-title">Don Remolo</h3>
+                      </div>
+                      <div>
+                        <picture className="Picture_donRemolo">
+                          <Image
+                            src="/assets/img/projects/donRemolo_375x667.webp"
+                            alt="Webpage DonRemolo"
+                            width={375}
+                            height={667}
+                            layout="responsive"
+                          />
+                          <div className="picture_content">
+                            <div className="picture_contentGrid">
+                              <div className="picture_grid-text">
+                                <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso
+                                una Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas,
+                                donde el reto personal, el cual ha sido logrado es el de crear un portal con router
+                                dinamico que se auto regenera como paginas estáticas una vez realizado el fetch usando
+                                NEXTjs para dicho feature.
+                                <p>
+                                  Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
+                                  performance.
+                                </p>
+                              </div>
+                              <div className="picture_contentGrid-bottom">
+                                <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                  <button>Web</button>
+                                </a>
+                                <a
+                                  href="https://github.com/emilioaray-dev/donremolo-next"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <button>
+                                    <h4>Git</h4>
+                                  </button>
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </picture>
+                        </picture>
+                      </div>
                     </div>
                   </SwiperSlide>
 
@@ -221,6 +226,11 @@ export default function Projects() {
       </section>
       <style jsx global>{``}</style>
       <style jsx>{`
+        /*
+        div {
+          border: 1px solid red;
+        }
+        */
         .container {
           display: grid;
           width: 100%;
@@ -238,29 +248,33 @@ export default function Projects() {
           display: grid;
           margin: 0 auto;
           width: 100%;
-          max-width: var(--max-widthContainer); 
+          max-width: var(--max-widthContainer);
           align-items: center;
         }
         .container_Margen {
-
           width: 100%;
           max-width: var(--max-widthContainer);
         }
         .Project_card {
           border-radius: 1rem;
-          padding: 2rem 0rem;
+          padding: 0rem 0rem 2rem 0rem;
           background: var(--colorCard2Background);
           max-height: 100vh;
-          background-image:
-            radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%) ,
+          background-image: radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%),
             radial-gradient(circle at 60% 23%, var(--colorB1Gradient) 0%, transparent 120%);
+        }
+
+        .Project_card-Divtitle {
+          display: grid;
+          align-items: center;
+          margin-bottom: 2rem;
+          padding-top: 2rem;
         }
         .Project_card-title {
           font-size: 3rem;
-          font-weight: 300;
-          line-height: 1.1;
+          margin-block-start: 0em;
+          margin-block-end: 0em;
           text-align: center;
-          margin-block-end: 2rem;
           font-weight: 600;
           font-family: 'Grechen Fuemen', cursive;
         }
@@ -289,11 +303,11 @@ export default function Projects() {
         .Project_cardsProjects:nth-child(2n) {
           background: var(--backgroundSubCardPar);
         }
-        .Project_cardsProjects:nth-child(2n+1) {
+        .Project_cardsProjects:nth-child(2n + 1) {
           background: var(--backgroundSubCardInpar);
         }
         .Project_cardsProjects-title {
-          font-family: Roboto, sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+          font-family: Roboto, sans-serif, 'Helvetica Neue', 'Lucida Grande', Arial;
           font-stretch: condensed;
           font-weight: 600;
           text-align: center;
@@ -326,8 +340,8 @@ export default function Projects() {
           height: 59.99%;
         }
 
-        .Picture_movil5  {
-           height: 74.4%;
+        .Picture_movil5 {
+          height: 74.4%;
         }
 
         /* Start Pictore hover Description 000000ab */
@@ -365,16 +379,15 @@ export default function Projects() {
           /* min-width: 5rem; */
           background: var(--colorButtonBlack);
           cursor: pointer;
-          
         }
         h4 {
-           background: linear-gradient(230deg, rgb(68 51 238), rgb(255 51 85));
+          background: linear-gradient(230deg, rgb(68 51 238), rgb(255 51 85));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
         .picture_contentGrid {
           display: grid;
-          grid-template-columns: auto ;
+          grid-template-columns: auto;
           grid-template-rows: 90% min-content;
           height: 100%;
         }
@@ -388,98 +401,307 @@ export default function Projects() {
           justify-content: space-around;
         }
 
-
-         @media(min-width: 1024px) and (max-width: 1279px) {
-        .Picture_Ifswitch {
-          height: 58.5%;
+        /*
+        @media (min-width: 1024px) and (max-width: 1279px) {
+          .Picture_Ifswitch {
+            height: 58.5%;
+          }
+          .Picture_vuestromenu {
+            height: 55%;
+          }
+          .Picture_donRemolo {
+            height: 55.6%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 65.4%;
+          }
         }
-        .Picture_vuestromenu {
-          height: 55%;
-        }
-        .Picture_donRemolo {
-          height: 55.6%;
-          font-size: 14px;
-        }
-        .Picture_movil5  {
-          height: 65.4%;
-        }
-        }
-         @media(min-width: 768px) and (max-width: 1023px) {
-        .Picture_Ifswitch {
-          height: 60%;
-        }
-        .Picture_vuestromenu {
-          height: 59%;
-        }
-        .Picture_donRemolo {
-          height: 57.5%;
-          font-size: 14px;
-        }
-        .Picture_movil5  {
-          height: 66.5%;
-        }
-        }
-
-        @media(min-width: 640px) and (max-width: 767px) {
-        .Picture_Ifswitch {
-          height: 59.5%;
-        }
-        .Picture_vuestromenu {
-          height: 59%;
-        }
-        .Picture_donRemolo {
-          height: 56.9%;
-          font-size: 14px;
-        }
-        .Picture_movil5  {
-          height: 66%;
-        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .Picture_Ifswitch {
+            height: 60%;
+          }
+          .Picture_vuestromenu {
+            height: 59%;
+          }
+          .Picture_donRemolo {
+            height: 57.5%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 66.5%;
+          }
         }
 
-        @media(max-width: 639px) {
-
-        .Project_cardsProjects {
-          min-height: 510px;
-          max-height: 63.8vh;
-        }
-        .Picture_Ifswitch {
-          /*
-          height: 100%;
-          */  
-          height: 58.5%;
-        }
-        .Picture_vuestromenu {
-          /*
-          height: 100%;
-          */
-          height: 57%; 
-        }
-        .Picture_donRemolo {
-          /*
-          height: 100%;
-          */
-          height: 56.5%; 
-          font-size: 14px;
-        }
-        .Picture_movil5  {
-          /*
-          height: 100%;
-          */
-          height: 65.8%; 
-        }
+        @media (min-width: 640px) and (max-width: 767px) {
+          .Picture_Ifswitch {
+            height: 59.5%;
+          }
+          .Picture_vuestromenu {
+            height: 59%;
+          }
+          .Picture_donRemolo {
+            height: 56.9%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 66%;
+          }
         }
 
-        
+  
+        @media only screen and (min-width: 375px) {
+          .Project_cardsProjects {
+            min-height: 510px;
+            max-height: 63.8vh;
+          }
+          .Picture_Ifswitch {
+            height: 58.5%;
+          }
+          .Picture_vuestromenu {
+            height: 57%;
+          }
+          .Picture_donRemolo {
+            height: 56.5%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 65.8%;
+          }
+        }
+*/
+        /* iphone 5se */
+        @media (aspect-ratio: 375/667) {
+          .Project_cardsProjects {
+            min-height: 510px;
+            max-height: 63.8vh;
+          }
+          .Picture_Ifswitch {
+            height: 58.5%;
+          }
+          .Picture_vuestromenu {
+            height: 57%;
+          }
+          .Picture_donRemolo {
+            height: 56.5%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 65.8%;
+          }
+        }
 
-       
+        /* iphone xr 414 896*/
+        @media (aspect-ratio: 207/448) {
+          .Picture_Ifswitch {
+            height: 64%;
+          }
+          .Picture_vuestromenu {
+            height: 64%;
+          }
+          .Picture_donRemolo {
+            height: 58.5%;
+          }
+          .Picture_movil5 {
+            height: 70.8%;
+          }
+        }
 
-       
+        /* pixel 5 393 851*/
+        @media (aspect-ratio: 393/851) {
+          .Picture_Ifswitch {
+            height: 60.5%;
+          }
+          .Picture_vuestromenu {
+            height: 61%;
+          }
 
+          .Picture_donRemolo {
+            height: 64%;
+            font-size: 13px;
+          }
+          .Picture_donRemolo p {
+            font-size: 13px;
+          }
+          .Picture_movil5 {
+            height: 69.99%;
+          }
+        }
+        @media (aspect-ratio: 16/9) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 67.5%;
+          }
+          .Picture_vuestromenu {
+            height: 65%;
+          }
+
+          .Picture_donRemolo {
+            height: 66.5%;
+          }
+
+          .Picture_movil5 {
+            height: 74.4%;
+          }
+        }
+
+        /* iPhone 6+, 7+, 8+ ----------- */
+        @media (aspect-ratio: 9/16) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 64.5%;
+          }
+          .Picture_vuestromenu {
+            height: 64%;
+          }
+          .Picture_donRemolo {
+            height: 63%;
+            font-size: 14px;
+          }
+          .Picture_movil5 {
+            height: 70.8%;
+          }
+        }
+
+        @media (aspect-ratio: 18/37) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 56%;
+          }
+          .Picture_vuestromenu {
+            height: 55%;
+          }
+          .Picture_donRemolo {
+            height: 56.8%;
+            font-size: 13px;
+          }
+          .Picture_movil5 {
+            height: 64.7%;
+          }
+        }
+        @media (aspect-ratio: 1/2) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 57.5%;
+            font-size: 13px;
+          }
+          .Picture_Ifswitch p {
+            font-size: 13px;
+          }
+          .Picture_vuestromenu {
+            height: 56%;
+            font-size: 13px;
+          }
+          .Picture_vuestromenu p {
+            font-size: 13px;
+          }
+          .Picture_donRemolo {
+            height: 60.2%;
+            font-size: 11px;
+          }
+          .Picture_donRemolo p {
+            font-size: 11px;
+          }
+          .Picture_movil5 {
+            height: 66.2%;
+            font-size: 13px;
+          }
+          .Picture_movil5 p {
+            font-size: 13px;
+          }
+        }
+
+        /* 912*1368 Aspect Ratio Surface Pro 2/3*/
+        @media (aspect-ratio: 2/3) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 68%;
+          }
+
+          .Picture_vuestromenu {
+            height: 67%;
+          }
+
+          .Picture_donRemolo {
+            height: 63.99%;
+            font-size: 13px;
+          }
+          .Picture_donRemolo p {
+            font-size: 13px;
+          }
+
+          .Picture_movil5 {
+            height: 75.4%;
+          }
+        }
+
+        /* 768*1024 Aspect Ratio Ipad Mini 3/4*/
+        @media (aspect-ratio: 3/4) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 60.5%;
+          }
+
+          .Picture_vuestromenu {
+            height: 61%;
+          }
+
+          .Picture_donRemolo {
+            height: 63.8%;
+            font-size: 13px;
+          }
+          .Picture_donRemolo p {
+            font-size: 13px;
+          }
+
+          .Picture_movil5 {
+            height: 66.4%;
+          }
+        }
+
+        /* iphone 12 Pro 390x844 Aspect Ratio 195 : 422*/
+        @media (aspect-ratio: 195/422) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 60.5%;
+          }
+
+          .Picture_vuestromenu {
+            height: 61%;
+          }
+
+          .Picture_donRemolo {
+            height: 57.85%;
+          }
+
+          .Picture_movil5 {
+            height: 69.39%;
+          }
+        }
+
+        /* samsun galaxy s20 412/915 195 : 422*/
+        @media (aspect-ratio: 412/915) {
+          /* Styles */
+          .Picture_Ifswitch {
+            height: 64%;
+          }
+
+          .Picture_vuestromenu {
+            height: 64%;
+          }
+
+          .Picture_donRemolo {
+            height: 62.85%;
+          }
+
+          .Picture_movil5 {
+            height: 70.5%;
+          }
+        }
 
         @media (max-width: 834px) {
           .Project_card {
-            background-image:
-              radial-gradient(circle at 50% 25%, var(--colorB3Gradient) 0%, transparent 74%),
+            background-image: radial-gradient(circle at 50% 25%, var(--colorB3Gradient) 0%, transparent 74%),
               radial-gradient(circle at 50% 98%, var(--colorB1Gradient) 0%, transparent 57%);
           }
           p {
@@ -487,9 +709,7 @@ export default function Projects() {
           }
 
           .container_Margen {
-
           }
-           
         }
         @media (min-width: 834px) and (max-width: 1280px) {
           .container {
@@ -501,7 +721,7 @@ export default function Projects() {
               rgba(255, 255, 255, 0) 7vw
             );
           }
-
+        }
       `}</style>
     </>
   )
