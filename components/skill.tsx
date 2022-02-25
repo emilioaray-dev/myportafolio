@@ -175,8 +175,8 @@ export default function Skill() {
           min-height: calc(100vh + var(--container_topMargin));
           background: repeating-linear-gradient(
             135deg,
-            #7c7c7c15 0px,
-            #7c7c7c15 3px,
+            var(--gBackground1) 0px,
+            var(--gBackground1) 3px,
             rgba(255, 255, 255, 0) 3px,
             rgba(255, 255, 255, 0) 6%
           );
@@ -207,7 +207,7 @@ export default function Skill() {
           /* 
           margin-top: var(--container_topMargin);
           */
-          background-image:ntnc
+          background-image:
             radial-gradient(circle at 17% 83%, var(--colorB3Gradient) 0%, transparent 74%) ,
             radial-gradient(circle at 60% 23%, var(--colorB1Gradient) 0%, transparent 120%);
         }
@@ -307,8 +307,8 @@ export default function Skill() {
           .container {
             background: repeating-linear-gradient(
               120deg,
-              #7c7c7c15 0px,
-              #7c7c7c15 3px,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
               rgba(255, 255, 255, 0) 3px,
               rgba(255, 255, 255, 0) 7vw
             );

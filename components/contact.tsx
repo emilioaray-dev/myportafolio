@@ -139,8 +139,8 @@ export default function Contact() {
           overflow: hidden;
           background: repeating-linear-gradient(
             135deg,
-            #7c7c7c15 0px,
-            #7c7c7c15 3px,
+            var(--gBackground1) 0px,
+            var(--gBackground1) 3px,
             rgba(255, 255, 255, 0) 3px,
             rgba(255, 255, 255, 0) 8.555%
           );
@@ -245,8 +245,8 @@ export default function Contact() {
           .container {
             background: repeating-linear-gradient(
               120deg,
-              #7c7c7c15 0px,
-              #7c7c7c15 3px,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
               rgba(255, 255, 255, 0) 3px,
               rgba(255, 255, 255, 0) 20%
             );
@@ -266,8 +266,8 @@ export default function Contact() {
           .container {
             background: repeating-linear-gradient(
               120deg,
-              #7c7c7c15 0px,
-              #7c7c7c15 3px,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
               rgba(255, 255, 255, 0) 3px,
               rgba(255, 255, 255, 0) 7vw
             );

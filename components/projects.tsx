@@ -30,16 +30,16 @@ export default function Projects() {
                       slidesPerView: 1.2,
                     },
                     640: {
-                      slidesPerView: 2.5,
+                      slidesPerView: 2.1,
                     },
                     768: {
-                      slidesPerView: 3.5,
+                      slidesPerView: 2.5,
                     },
                     1024: {
-                      slidesPerView: 4.5,
+                      slidesPerView: 3.5,
                     },
                     1280: {
-                      slidesPerView: 5.5,
+                      slidesPerView: 3.5,
                     },
                     1440: {
                       slidesPerView: 3.5,
@@ -228,8 +228,8 @@ export default function Projects() {
           min-height: calc(100vh + var(--container_topMargin));
           background: repeating-linear-gradient(
             45deg,
-            #7c7c7c15 0px,
-            #7c7c7c15 3px,
+            var(--gBackground1) 0px,
+            var(--gBackground1) 3px,
             rgba(255, 255, 255, 0) 3px,
             rgba(255, 255, 255, 0) 6%
           );
@@ -387,6 +387,95 @@ export default function Projects() {
           display: flex;
           justify-content: space-around;
         }
+
+
+         @media(min-width: 1024px) and (max-width: 1279px) {
+        .Picture_Ifswitch {
+          height: 58.5%;
+        }
+        .Picture_vuestromenu {
+          height: 55%;
+        }
+        .Picture_donRemolo {
+          height: 55.6%;
+          font-size: 14px;
+        }
+        .Picture_movil5  {
+          height: 65.4%;
+        }
+        }
+         @media(min-width: 768px) and (max-width: 1023px) {
+        .Picture_Ifswitch {
+          height: 60%;
+        }
+        .Picture_vuestromenu {
+          height: 59%;
+        }
+        .Picture_donRemolo {
+          height: 57.5%;
+          font-size: 14px;
+        }
+        .Picture_movil5  {
+          height: 66.5%;
+        }
+        }
+
+        @media(min-width: 640px) and (max-width: 767px) {
+        .Picture_Ifswitch {
+          height: 59.5%;
+        }
+        .Picture_vuestromenu {
+          height: 59%;
+        }
+        .Picture_donRemolo {
+          height: 56.9%;
+          font-size: 14px;
+        }
+        .Picture_movil5  {
+          height: 66%;
+        }
+        }
+
+        @media(max-width: 639px) {
+
+        .Project_cardsProjects {
+          min-height: 510px;
+          max-height: 63.8vh;
+        }
+        .Picture_Ifswitch {
+          /*
+          height: 100%;
+          */  
+          height: 58.5%;
+        }
+        .Picture_vuestromenu {
+          /*
+          height: 100%;
+          */
+          height: 57%; 
+        }
+        .Picture_donRemolo {
+          /*
+          height: 100%;
+          */
+          height: 56.5%; 
+          font-size: 14px;
+        }
+        .Picture_movil5  {
+          /*
+          height: 100%;
+          */
+          height: 65.8%; 
+        }
+        }
+
+        
+
+       
+
+       
+
+
         @media (max-width: 834px) {
           .Project_card {
             background-image:
@@ -400,30 +489,14 @@ export default function Projects() {
           .container_Margen {
 
           }
-            .Picture_Ifswitch {
-          height: 58.5%;
-        }
-
-
-        .Picture_vuestromenu {
-          height: 57%;
-        }
-
-        .Picture_donRemolo {
-          height: 56.5%;
-          font-size: 14px;
-        }
-
-        .Picture_movil5  {
-           height: 65.6%;
-        }
+           
         }
         @media (min-width: 834px) and (max-width: 1280px) {
           .container {
             background: repeating-linear-gradient(
               120deg,
-              #7c7c7c15 0px,
-              #7c7c7c15 3px,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
               rgba(255, 255, 255, 0) 3px,
               rgba(255, 255, 255, 0) 7vw
             );

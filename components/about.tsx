@@ -37,8 +37,8 @@ export default function About() {
           background-color: rgba(255, 255, 255, 0);
           background: repeating-linear-gradient(
             45deg,
-            #7c7c7c15 0px,
-            #7c7c7c15 3px,
+            var(--gBackground1) 0px,
+            var(--gBackground1) 3px,
             rgba(255, 255, 255, 0) 3px,
             rgba(255, 255, 255, 0) 6%
           );
@@ -91,8 +91,8 @@ export default function About() {
           .container {
             background: repeating-linear-gradient(
               45deg,
-              #7c7c7c15 0px,
-              #7c7c7c15 3px,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
               rgba(255, 255, 255, 0) 3px,
               rgba(255, 255, 255, 0) 6.65%
             );
