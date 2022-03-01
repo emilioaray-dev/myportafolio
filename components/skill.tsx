@@ -278,6 +278,148 @@ export default function Skill() {
           margin-block-end: 1em;
         }
 
+        /* iphone 5se 6 7 8 */
+        @media (aspect-ratio: 375 / 667) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 71px
+            );
+          }
+        }
+
+        /* iphone 6+ 7+ 8+ */
+        @media (aspect-ratio: 9 / 16) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 71px
+            );
+          }
+        }
+
+        /* iphone x */
+        @media (aspect-ratio: 375 / 812) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 73px
+            );
+          }
+        }
+
+          /* iphone Xr 414/896 */
+        @media (aspect-ratio: 207 / 448) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 80px
+            );
+          }
+        }
+
+      /* iphone 12 Pro 390*844*/
+        @media (aspect-ratio: 195 / 422) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 76px
+            );
+          }
+        }
+
+        /* Pixel 5*/
+        @media (aspect-ratio: 393 / 851) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 76px
+            );
+          }
+        }
+
+        /* Galaxy s8+*/
+        @media (aspect-ratio: 18 / 37) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 72px
+            );
+          }
+        }
+
+        /* Galaxy s20*/
+        @media (aspect-ratio: 412 / 915) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 81px
+            );
+          }
+        }
+
+        /* Ipad Air*/
+        @media (aspect-ratio: 41 / 59) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 120px
+            );
+          }
+        }
+
+        /* Ipad Amini*/
+        @media (aspect-ratio: 3 / 4) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 108px
+            );
+          }
+        }
+
+        /* Samsun A51*/
+        @media (aspect-ratio: 206 / 457) {
+          .container {
+            background: repeating-linear-gradient(
+              120deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 82px
+            );
+          }
+        }
         @media (max-width: 834px) {
           /*
           .container {

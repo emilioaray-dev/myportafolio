@@ -138,7 +138,7 @@ export default function Contact() {
           width: 100%;
           overflow: hidden;
           background: repeating-linear-gradient(
-            135deg,
+            120deg,
             var(--gBackground1) 0px,
             var(--gBackground1) 3px,
             rgba(255, 255, 255, 0) 3px,
@@ -156,6 +156,7 @@ export default function Contact() {
         .container_Margen {
           display: grid;
           align-items: center;
+          padding: 0 1rem;
         }
 
         .Contact_card {

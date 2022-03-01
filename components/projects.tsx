@@ -47,9 +47,10 @@ export default function Projects() {
                     },
                   }}
                 >
-                  <SwiperSlide>
+                  <SwiperSlide id={'uno'}>
                     <div className="Project_cardsProjects">
                       <h3 className="Project_cardsProjects-title">Ifswitch</h3>
+
                       <picture className="Picture_Ifswitch">
                         <Image
                           src="/assets/img/projects/ifswitchre.webp"
@@ -58,128 +59,118 @@ export default function Projects() {
                           height={667}
                           layout="responsive"
                         />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">
-                              <strong>Ifswitch</strong>. Es un Proyecto de IOT donde he creado tanto la pagina web, asi
-                              como el Hardware de IOT, programación y desarrollo.
-                              <p>
-                                Esta diseñado para detectar presencia de agua en la red para encender y apagar
-                                automáticamente una bomba y monitorear niveles de tanque o tinaco, compatible con MQTT y
-                                HomeAssistant.
-                              </p>
-                            </div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="https://www.ifswitch.com/" target="_blank" rel="noopener noreferrer">
-                                <button>Web</button>
-                              </a>
-                              <a
-                                href="https://github.com/emilioaray-dev/ifswitch.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <button>
-                                  <h4>Git</h4>
-                                </button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
                       </picture>
+                    </div>
+                    <div className="picture_contentGrid">
+                      <div className="picture_grid-text">
+                        <strong>Ifswitch</strong>. Es un Proyecto de IOT donde he creado tanto la pagina web, asi como
+                        el Hardware de IOT, programación y desarrollo.
+                        <p>
+                          Esta diseñado para detectar presencia de agua en la red para encender y apagar automáticamente
+                          una bomba y monitorear niveles de tanque o tinaco, compatible con MQTT y HomeAssistant.
+                        </p>
+                      </div>
+                      <div className="picture_contentGrid-bottom">
+                        <a href="https://www.ifswitch.com/" target="_blank" rel="noopener noreferrer">
+                          <button>Web</button>
+                        </a>
+                        <a
+                          href="https://github.com/emilioaray-dev/ifswitch.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button>
+                            <h4>Git</h4>
+                          </button>
+                        </a>
+                      </div>
                     </div>
                   </SwiperSlide>
 
-                  <SwiperSlide>
+                  <SwiperSlide id={'dos'}>
                     <div className="Project_cardsProjects">
                       <h3 className="Project_cardsProjects-title">VuestroMenu</h3>
+
                       <picture className="Picture_vuestromenu">
                         <Image
                           src="/assets/img/projects/vuestromenu_375x667.webp"
-                          alt="Webpage vuestromenu.com"
+                          alt="Webpage Vuestromenu.com"
                           width={375}
                           height={667}
                           layout="responsive"
                         />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">
-                              <strong>Vuestromenu,</strong> es el desarrollo de una PWA de menu digitales para
-                              restaurantes, siendo estos autoadministrable, creado con NEXTjs con (ISR) Incremental
-                              Static Regeneration, usando como cms notion.so.
-                              <p>
-                                Otorgándole la versatilidad al cliente de que pueda hacer CRUD en vivo de sus platos con
-                                la velocidad de una pagina estática.
-                              </p>
-                            </div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="https://www.vuestromenu.com/" target="_blank" rel="noopener noreferrer">
-                                <button>Web</button>
-                              </a>
-                              <a
-                                href="https://github.com/emilioaray-dev/apivuestromenu"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <button>
-                                  <h4>Git</h4>
-                                </button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
                       </picture>
                     </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="Project_cardsProjects">
-                      <div>
-                        <h3 className="Project_cardsProjects-title">Don Remolo</h3>
+                    <div className="picture_contentGrid">
+                      <div className="picture_grid-text">
+                        <strong>Vuestromenu,</strong> es el desarrollo de una PWA de menu digitales para restaurantes,
+                        siendo estos autoadministrable, creado con NEXTjs con (ISR) Incremental Static Regeneration,
+                        usando como cms notion.so.
+                        <p>
+                          Otorgándole la versatilidad al cliente de que pueda hacer CRUD en vivo de sus platos con la
+                          velocidad de una pagina estática.
+                        </p>
                       </div>
-                      <div>
-                        <picture className="Picture_donRemolo">
-                          <Image
-                            src="/assets/img/projects/donRemolo_375x667.webp"
-                            alt="Webpage DonRemolo"
-                            width={375}
-                            height={667}
-                            layout="responsive"
-                          />
-                          <div className="picture_content">
-                            <div className="picture_contentGrid">
-                              <div className="picture_grid-text">
-                                <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso
-                                una Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas,
-                                donde el reto personal, el cual ha sido logrado es el de crear un portal con router
-                                dinamico que se auto regenera como paginas estáticas una vez realizado el fetch usando
-                                NEXTjs para dicho feature.
-                                <p>
-                                  Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
-                                  performance.
-                                </p>
-                              </div>
-                              <div className="picture_contentGrid-bottom">
-                                <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                  <button>Web</button>
-                                </a>
-                                <a
-                                  href="https://github.com/emilioaray-dev/donremolo-next"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  <button>
-                                    <h4>Git</h4>
-                                  </button>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </picture>
+                      <div className="picture_contentGrid-bottom">
+                        <a href="https://www.vuestromenu.com/" target="_blank" rel="noopener noreferrer">
+                          <button>Web</button>
+                        </a>
+                        <a
+                          href="https://github.com/emilioaray-dev/apivuestromenu"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button>
+                            <h4>Git</h4>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </SwiperSlide>
 
-                  <SwiperSlide>
+                  <SwiperSlide id={'tres'}>
+                    <div className="Project_cardsProjects">
+                      <h3 className="Project_cardsProjects-title">Don Remolo</h3>
+
+                      <picture className="Picture_donRemolo">
+                        <Image
+                          src="/assets/img/projects/donRemolo_375x667.webp"
+                          alt="Webpage Vuestromenu.com"
+                          width={375}
+                          height={667}
+                          layout="responsive"
+                        />
+                      </picture>
+                    </div>
+                    <div className="picture_contentGrid">
+                      <div className="picture_grid-text">
+                        <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso una
+                        Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas, donde el reto
+                        personal, el cual ha sido logrado es el de crear un portal con router dinamico que se auto
+                        regenera como paginas estáticas una vez realizado el fetch usando NEXTjs para dicho feature.
+                        <p>
+                          Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
+                          performance.
+                        </p>
+                      </div>
+                      <div className="picture_contentGrid-bottom">
+                        <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
+                          <button>Web</button>
+                        </a>
+                        <a
+                          href="https://github.com/emilioaray-dev/donremolo-next"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button>
+                            <h4>Git</h4>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide id={'cuatro'}>
                     <div className="Project_cardsProjects">
                       <h3 className="Project_cardsProjects-title">movil5</h3>
                       <picture className="Picture_movil5">
@@ -190,41 +181,36 @@ export default function Projects() {
                           height={667}
                           layout="responsive"
                         />
-                        <div className="picture_content">
-                          <div className="picture_contentGrid">
-                            <div className="picture_grid-text">
-                              <strong>movil5.</strong> Es la pagina web creada por mi persona de la empresa movil5
-                              Panama, donde he podido colaborar con ellos remotamente como front developer por mas de 5
-                              años.
-                              <p>Dicho desarrollo fue generado con Gatsby.</p>
-                            </div>
-                            <div className="picture_contentGrid-bottom">
-                              <a href="https://www.movil5.com/es/" target="_blank" rel="noopener noreferrer">
-                                <button>Web</button>
-                              </a>
-                              <a
-                                href="https://github.com/emilioaray-dev/movil5.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <button>
-                                  <h4>Git</h4>
-                                </button>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
                       </picture>
+                    </div>
+                    <div className="picture_contentGrid">
+                      <div className="picture_grid-text">
+                        <strong>movil5.</strong> Es la pagina web creada por mi persona de la empresa movil5 Panama,
+                        donde he podido colaborar con ellos remotamente como front developer por mas de 5 años.
+                        <p>Dicho desarrollo fue generado con Gatsby.</p>
+                      </div>
+                      <div className="picture_contentGrid-bottom">
+                        <a href="https://www.movil5.com/es/" target="_blank" rel="noopener noreferrer">
+                          <button>Web</button>
+                        </a>
+                        <a
+                          href="https://github.com/emilioaray-dev/movil5.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button>
+                            <h4>Git</h4>
+                          </button>
+                        </a>
+                      </div>
                     </div>
                   </SwiperSlide>
                 </Swiper>
               </div>
-              {/* */}
             </div>
           </div>
         </div>
       </section>
-      <style jsx global>{``}</style>
       <style jsx>{`
         /*
         div {
@@ -255,6 +241,13 @@ export default function Projects() {
           width: 100%;
           max-width: var(--max-widthContainer);
         }
+
+        .cardsProject_grid {
+          display: block;
+          width: 100vw;
+          max-width: var(--max-widthContainer);
+          padding: 0 1rem;
+        }
         .Project_card {
           border-radius: 1rem;
           padding: 0rem 0rem 2rem 0rem;
@@ -282,12 +275,6 @@ export default function Projects() {
 
         /* Start SubCard Projects */
 
-        .cardsProject_grid {
-          display: block;
-          width: 100vw;
-          max-width: var(--max-widthContainer);
-          padding: 0 1rem;
-        }
         .Project_cardsProjects {
           display: grid;
           border-radius: 1rem;
@@ -318,65 +305,22 @@ export default function Projects() {
         picture {
           display: block;
           width: 100%;
-          height: 95%;
+          height: auto;
           user-select: none;
           border-radius: 1.2rem;
           overflow: hidden;
-          margin-bottom: -4rem;
-        }
-
-        .Picture_Ifswitch {
-          height: 67.5%;
-        }
-        p {
-          margin-top: 1rem;
-        }
-
-        .Picture_vuestromenu {
-          height: 65%;
-        }
-
-        .Picture_donRemolo {
-          height: 59.99%;
-        }
-
-        .Picture_movil5 {
-          height: 74.4%;
         }
 
         /* Start Pictore hover Description 000000ab */
         .picture_content {
           display: grid;
-          transform: translateY(-100%);
-          background: #000000ab;
-          width: 100%;
-          height: 0%;
-          border-radius: 1rem;
-          -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-          opacity: 0;
-          transition: 0.4s;
-          color: var(--colorWhite);
-          /*
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          margin: 3.5rem 0rem 0rem 0rem;
-          padding: 0.5rem;
-          max-width: 13rem;*/
         }
-        picture:hover > .picture_content {
-          display: block;
-          width: 100%;
-          height: 100%;
-          opacity: 1;
-        }
+
         button {
           color: var(--colorTextHeader);
           border-radius: var(--borderRadius_buttom);
           padding: 0.2rem 1rem;
           border: none;
-          /* min-width: 5rem; */
           background: var(--colorButtonBlack);
           cursor: pointer;
         }
@@ -385,317 +329,188 @@ export default function Projects() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+
         .picture_contentGrid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-template-rows: 90% min-content;
-          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transform: translateY(-100%);
+          opacity: 0;
+          transition: 0.4s;
+          position: absolute;
+          height: inherit;
+        }
+
+        .picture_contentGrid:hover {
+          visibility: visible;
+          opacity: 1;
         }
 
         .picture_grid-text {
           padding: 1rem;
           height: 100%;
+          background: #000000ab;
+          -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+          border-radius: 1.2rem 1.2rem 0rem 0rem;
         }
+
+        .picture_grid-text + p {
+          font-size: 1rem;
+        }
+
+        p {
+          margin-top: 1rem;
+        }
+
         .picture_contentGrid-bottom {
           display: flex;
           justify-content: space-around;
+          background: #000000ab;
+          border-radius: 0rem 0rem 1rem 1rem;
         }
 
-        /*
-        @media (min-width: 1024px) and (max-width: 1279px) {
-          .Picture_Ifswitch {
-            height: 58.5%;
-          }
-          .Picture_vuestromenu {
-            height: 55%;
-          }
-          .Picture_donRemolo {
-            height: 55.6%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 65.4%;
-          }
-        }
-        @media (min-width: 768px) and (max-width: 1023px) {
-          .Picture_Ifswitch {
-            height: 60%;
-          }
-          .Picture_vuestromenu {
-            height: 59%;
-          }
-          .Picture_donRemolo {
-            height: 57.5%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 66.5%;
-          }
-        }
-
-        @media (min-width: 640px) and (max-width: 767px) {
-          .Picture_Ifswitch {
-            height: 59.5%;
-          }
-          .Picture_vuestromenu {
-            height: 59%;
-          }
-          .Picture_donRemolo {
-            height: 56.9%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 66%;
-          }
-        }
-
-  
-        @media only screen and (min-width: 375px) {
-          .Project_cardsProjects {
-            min-height: 510px;
-            max-height: 63.8vh;
-          }
-          .Picture_Ifswitch {
-            height: 58.5%;
-          }
-          .Picture_vuestromenu {
-            height: 57%;
-          }
-          .Picture_donRemolo {
-            height: 56.5%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 65.8%;
-          }
-        }
-*/
         /* iphone 5se */
-        @media (aspect-ratio: 375/667) {
-          .Project_cardsProjects {
-            min-height: 510px;
-            max-height: 63.8vh;
-          }
-          .Picture_Ifswitch {
-            height: 58.5%;
-          }
-          .Picture_vuestromenu {
-            height: 57%;
-          }
-          .Picture_donRemolo {
-            height: 56.5%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 65.8%;
+        /* iphone 5se 6 7 8 */
+        @media (aspect-ratio: 375 / 667) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 59.5px
+            );
           }
         }
 
-        /* iphone xr 414 896*/
-        @media (aspect-ratio: 207/448) {
-          .Picture_Ifswitch {
-            height: 64%;
-          }
-          .Picture_vuestromenu {
-            height: 64%;
-          }
-          .Picture_donRemolo {
-            height: 58.5%;
-          }
-          .Picture_movil5 {
-            height: 70.8%;
+        /* iphone 6+ 7+ 8+ */
+        @media (aspect-ratio: 9 / 16) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 58.5px
+            );
           }
         }
 
-        /* pixel 5 393 851*/
-        @media (aspect-ratio: 393/851) {
-          .Picture_Ifswitch {
-            height: 60.5%;
-          }
-          .Picture_vuestromenu {
-            height: 61%;
-          }
-
-          .Picture_donRemolo {
-            height: 64%;
-            font-size: 13px;
-          }
-          .Picture_donRemolo p {
-            font-size: 13px;
-          }
-          .Picture_movil5 {
-            height: 69.99%;
-          }
-        }
-        @media (aspect-ratio: 16/9) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 67.5%;
-          }
-          .Picture_vuestromenu {
-            height: 65%;
-          }
-
-          .Picture_donRemolo {
-            height: 66.5%;
-          }
-
-          .Picture_movil5 {
-            height: 74.4%;
+        /* iphone x */
+        @media (aspect-ratio: 375 / 812) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 59.5px
+            );
           }
         }
 
-        /* iPhone 6+, 7+, 8+ ----------- */
-        @media (aspect-ratio: 9/16) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 64.5%;
-          }
-          .Picture_vuestromenu {
-            height: 64%;
-          }
-          .Picture_donRemolo {
-            height: 63%;
-            font-size: 14px;
-          }
-          .Picture_movil5 {
-            height: 70.8%;
+        /* iphone Xr 414/896 */
+        @media (aspect-ratio: 207 / 448) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 63.5px
+            );
           }
         }
 
-        @media (aspect-ratio: 18/37) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 56%;
-          }
-          .Picture_vuestromenu {
-            height: 55%;
-          }
-          .Picture_donRemolo {
-            height: 56.8%;
-            font-size: 13px;
-          }
-          .Picture_movil5 {
-            height: 64.7%;
-          }
-        }
-        @media (aspect-ratio: 1/2) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 57.5%;
-            font-size: 13px;
-          }
-          .Picture_Ifswitch p {
-            font-size: 13px;
-          }
-          .Picture_vuestromenu {
-            height: 56%;
-            font-size: 13px;
-          }
-          .Picture_vuestromenu p {
-            font-size: 13px;
-          }
-          .Picture_donRemolo {
-            height: 60.2%;
-            font-size: 11px;
-          }
-          .Picture_donRemolo p {
-            font-size: 11px;
-          }
-          .Picture_movil5 {
-            height: 66.2%;
-            font-size: 13px;
-          }
-          .Picture_movil5 p {
-            font-size: 13px;
+        /* iphone 12 Pro 390*844*/
+        @media (aspect-ratio: 195 / 422) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 63px
+            );
           }
         }
 
-        /* 912*1368 Aspect Ratio Surface Pro 2/3*/
-        @media (aspect-ratio: 2/3) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 68%;
-          }
-
-          .Picture_vuestromenu {
-            height: 67%;
-          }
-
-          .Picture_donRemolo {
-            height: 63.99%;
-            font-size: 13px;
-          }
-          .Picture_donRemolo p {
-            font-size: 13px;
-          }
-
-          .Picture_movil5 {
-            height: 75.4%;
+        /* Pixel 5*/
+        @media (aspect-ratio: 393 / 851) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 63.5px
+            );
           }
         }
 
-        /* 768*1024 Aspect Ratio Ipad Mini 3/4*/
-        @media (aspect-ratio: 3/4) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 60.5%;
-          }
-
-          .Picture_vuestromenu {
-            height: 61%;
-          }
-
-          .Picture_donRemolo {
-            height: 63.8%;
-            font-size: 13px;
-          }
-          .Picture_donRemolo p {
-            font-size: 13px;
-          }
-
-          .Picture_movil5 {
-            height: 66.4%;
+        /* Galaxy s8+*/
+        @media (aspect-ratio: 18 / 37) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 60px
+            );
           }
         }
 
-        /* iphone 12 Pro 390x844 Aspect Ratio 195 : 422*/
-        @media (aspect-ratio: 195/422) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 60.5%;
-          }
-
-          .Picture_vuestromenu {
-            height: 61%;
-          }
-
-          .Picture_donRemolo {
-            height: 57.85%;
-          }
-
-          .Picture_movil5 {
-            height: 69.39%;
+        /* Galaxy s20*/
+        @media (aspect-ratio: 412 / 915) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 65px
+            );
           }
         }
 
-        /* samsun galaxy s20 412/915 195 : 422*/
-        @media (aspect-ratio: 412/915) {
-          /* Styles */
-          .Picture_Ifswitch {
-            height: 64%;
+        /* Ipad Air*/
+        @media (aspect-ratio: 41 / 59) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 97px
+            );
           }
+        }
 
-          .Picture_vuestromenu {
-            height: 64%;
+        /* Ipad Amini*/
+        @media (aspect-ratio: 3 / 4) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 86.5px
+            );
           }
+        }
 
-          .Picture_donRemolo {
-            height: 62.85%;
-          }
-
-          .Picture_movil5 {
-            height: 70.5%;
+        /* Samsun A51*/
+        @media (aspect-ratio: 206 / 457) {
+          .container {
+            background: repeating-linear-gradient(
+              45deg,
+              var(--gBackground1) 0px,
+              var(--gBackground1) 3px,
+              rgba(255, 255, 255, 0) 3px,
+              rgba(255, 255, 255, 0) 65.5px
+            );
           }
         }
 
@@ -709,17 +524,6 @@ export default function Projects() {
           }
 
           .container_Margen {
-          }
-        }
-        @media (min-width: 834px) and (max-width: 1280px) {
-          .container {
-            background: repeating-linear-gradient(
-              120deg,
-              var(--gBackground1) 0px,
-              var(--gBackground1) 3px,
-              rgba(255, 255, 255, 0) 3px,
-              rgba(255, 255, 255, 0) 7vw
-            );
           }
         }
       `}</style>
