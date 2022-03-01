@@ -67,7 +67,7 @@ export default function Navbar() {
   useEffect(() => {
     const _classList = []
 
-    if (scroll.y > 150 && scroll.y - scroll.lastY > 0) _classList.push('--hidden')
+    if (scroll.y > 20 && scroll.y - scroll.lastY > 0) _classList.push('--hidden')
 
     setNavClassList(_classList)
   }, [scroll.y, scroll.lastY])
