@@ -8,6 +8,7 @@ import 'swiper/css'
 import 'swiper/css/virtual'
 
 export default function Projects() {
+  // Set UseTranslation
   const { t } = useTranslation('common')
 
   // Create array with 1000 slides
@@ -63,12 +64,8 @@ export default function Projects() {
                     </div>
                     <div className="picture_contentGrid">
                       <div className="picture_grid-text">
-                        <strong>Ifswitch</strong>. Es un Proyecto de IOT donde he creado tanto la pagina web, asi como
-                        el Hardware de IOT, programación y desarrollo.
-                        <p>
-                          Esta diseñado para detectar presencia de agua en la red para encender y apagar automáticamente
-                          una bomba y monitorear niveles de tanque o tinaco, compatible con MQTT y HomeAssistant.
-                        </p>
+                        <strong>Ifswitch</strong>. {t('ifswitch1')}
+                        <p>{t('ifswitch2')}</p>
                       </div>
                       <div className="picture_contentGrid-bottom">
                         <a href="https://www.ifswitch.com/" target="_blank" rel="noopener noreferrer">
@@ -103,13 +100,8 @@ export default function Projects() {
                     </div>
                     <div className="picture_contentGrid">
                       <div className="picture_grid-text">
-                        <strong>Vuestromenu,</strong> es el desarrollo de una PWA de menu digitales para restaurantes,
-                        siendo estos autoadministrable, creado con NEXTjs con (ISR) Incremental Static Regeneration,
-                        usando como cms notion.so.
-                        <p>
-                          Otorgándole la versatilidad al cliente de que pueda hacer CRUD en vivo de sus platos con la
-                          velocidad de una pagina estática.
-                        </p>
+                        <strong>Vuestromenu,</strong> {t('vuestromenu1')}
+                        <p>{t('vuestromenu2')}</p>
                       </div>
                       <div className="picture_contentGrid-bottom">
                         <a href="https://www.vuestromenu.com/" target="_blank" rel="noopener noreferrer">
@@ -144,14 +136,8 @@ export default function Projects() {
                     </div>
                     <div className="picture_contentGrid">
                       <div className="picture_grid-text">
-                        <strong>Don Remolo,</strong> es un portal para menu de restaurante, en el presente caso una
-                        Pizzeria, la cual sigue en desarrollo realizada entre el equipo #87 de idforideas, donde el reto
-                        personal, el cual ha sido logrado es el de crear un portal con router dinamico que se auto
-                        regenera como paginas estáticas una vez realizado el fetch usando NEXTjs para dicho feature.
-                        <p>
-                          Como siguiente reto se desea implementar “SWR” para los fetch para lograr un mejor
-                          performance.
-                        </p>
+                        <strong>Don Remolo,</strong> {t('donremolo1')}
+                        <p>{t('donremolo2')}</p>
                       </div>
                       <div className="picture_contentGrid-bottom">
                         <a href="https://donremolo-next.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -185,9 +171,8 @@ export default function Projects() {
                     </div>
                     <div className="picture_contentGrid">
                       <div className="picture_grid-text">
-                        <strong>movil5.</strong> Es la pagina web creada por mi persona de la empresa movil5 Panama,
-                        donde he podido colaborar con ellos remotamente como front developer por mas de 5 años.
-                        <p>Dicho desarrollo fue generado con Gatsby.</p>
+                        <strong>movil5.</strong> {t('movil51')}
+                        <p>{t('movil52')}</p>
                       </div>
                       <div className="picture_contentGrid-bottom">
                         <a href="https://www.movil5.com/es/" target="_blank" rel="noopener noreferrer">
@@ -323,6 +308,7 @@ export default function Projects() {
           border: none;
           background: var(--colorButtonBlack);
           cursor: pointer;
+          margin: 1rem 0rem;
         }
         h4 {
           background: linear-gradient(230deg, rgb(68 51 238), rgb(255 51 85));
