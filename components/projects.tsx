@@ -339,6 +339,7 @@ export default function Projects() {
           -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
           border-radius: 1.2rem 1.2rem 0rem 0rem;
+          color: var(--colorTextHeader);
         }
 
         .picture_grid-text + p {
